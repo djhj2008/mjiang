@@ -1,0 +1,873 @@
+[ 2018-03-26T17:00:13+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=595cf78ab49ec4e5b687242f0066bd40&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.073351s ]
+
+[ 2018-03-26T17:00:15+08:00 ] 172.28.32.149 /likeplus/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002086s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.414023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.414118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.023061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023104s ]
+
+[ 2018-03-26T17:00:16+08:00 ] 172.28.32.149 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2018-03-26T17:00:25+08:00 ] 172.28.32.149 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `lp_sales` [ RunTime:0.0279s ]
+SQL: SELECT * FROM `lp_sales` WHERE `phone` = '15010150766' LIMIT 1   [ RunTime:0.0363s ]
+SQL: SELECT * FROM `lp_sales` WHERE `phone` = '15010150766' AND `password` = '72c543da89f2ec5ea03038c3f7400337' LIMIT 1   [ RunTime:0.0328s ]
+
+[ 2018-03-26T17:00:26+08:00 ] 172.28.32.149 /likeplus/index.php/sale/index/token/545d26e03c6b1507ef4c85af88984f29/sale_id/14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002174s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0249s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) AND wares.date BETWEEN '2018-03-26 00:00:00' AND '2018-03-26 23:59:59' ORDER BY wares.date asc  [ RunTime:0.0519s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.680290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.680382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2018-03-26T17:00:32+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for D:/amp/Apache24/htdocs/likeplus/Runtime/Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php D:\amp\Apache24\htdocs\likeplus\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(D:/amp/Apache24/htdocs/likeplus/Runtime/Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php): No such file or directory D:\amp\Apache24\htdocs\likeplus\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.321472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.321530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-03-26T17:00:54+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2018-03-26T17:01:08+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-03-26T17:02:40+08:00 ] ::1 /likeplus/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2018-03-26T17:02:42+08:00 ] ::1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-03-26T17:02:44+08:00 ] ::1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `lp_sales` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `lp_sales` WHERE `phone` = '15010150766' LIMIT 1   [ RunTime:0.0255s ]
+SQL: SELECT * FROM `lp_sales` WHERE `phone` = '15010150766' AND `password` = '72c543da89f2ec5ea03038c3f7400337' LIMIT 1   [ RunTime:0.0191s ]
+
+[ 2018-03-26T17:02:44+08:00 ] ::1 /likeplus/index.php/sale/index/token/fc5cde23a6d1fb35cad7ed4f25996561/sale_id/14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0293s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) AND wares.date BETWEEN '2018-03-26 00:00:00' AND '2018-03-26 23:59:59' ORDER BY wares.date asc  [ RunTime:0.0253s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002045s ]
+
+[ 2018-03-26T17:02:49+08:00 ] ::1 /likeplus/index.php/sale/saleinfo?token=fc5cde23a6d1fb35cad7ed4f25996561&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-03-26T17:08:27+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-03-26T17:33:36+08:00 ] ::1 /likeplus/index.php/sale/saleinfo?token=fc5cde23a6d1fb35cad7ed4f25996561&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2018-03-26T18:06:04+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001801s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2018-03-26T18:06:40+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002095s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-03-26T18:06:53+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2018-03-26T18:06:55+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2018-03-26T18:07:25+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2018-03-26T18:07:27+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002487s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-03-26T18:07:39+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-03-26T18:07:40+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2018-03-26T18:08:00+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2018-03-26T18:08:02+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002564s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2018-03-26T18:08:09+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2018-03-26T18:08:11+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2018-03-26T18:08:12+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2018-03-26T18:08:30+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2018-03-26T18:08:59+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.208817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.208860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-03-26T18:09:20+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2018-03-26T18:09:22+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-03-26T18:09:27+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2018-03-26T18:09:32+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-03-26T18:09:34+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2018-03-26T18:10:05+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2018-03-26T18:10:06+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2018-03-26T18:10:11+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2018-03-26T18:10:12+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-03-26T18:10:32+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-03-26T18:10:34+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2018-03-26T18:10:38+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2018-03-26T18:10:39+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001819s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2018-03-26T18:10:49+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002075s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2018-03-26T18:10:51+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002428s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2018-03-26T18:10:55+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-03-26T18:11:01+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2018-03-26T18:11:03+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002515s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2018-03-26T18:11:12+08:00 ] 172.28.32.149 /likeplus/index.php/Home/Sale/index?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002074s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0328s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) AND wares.date BETWEEN '2018-03-26 00:00:00' AND '2018-03-26 23:59:59' ORDER BY wares.date asc  [ RunTime:0.0534s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001458s ]
+
+[ 2018-03-26T18:11:20+08:00 ] 172.28.32.149 /likeplus/index.php/Home/Sale/waretop?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0307s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) ORDER BY wares.score desc LIMIT 10   [ RunTime:0.0364s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2018-03-26T18:11:25+08:00 ] 172.28.32.149 /likeplus/index.php/sale/wareinfo?token=545d26e03c6b1507ef4c85af88984f29&ware_id=24&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002114s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0232s ]
+SQL: SELECT wares.name as name,wares.out_price as out_price,wares.number as number,wares.other_price as other_price,wares.factory_info as factory_info,wares.flag as flag,wares.pic_url as pic_url,wares.pic_path as pic_path,wares.auto_id as wid,wares.date as date,wares.video_url as video_url FROM lp_wares wares WHERE wares.auto_id = '24' AND (  wares.flag = 1 ) ORDER BY wares.auto_id desc LIMIT 1   [ RunTime:0.0276s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.280712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.280798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-03-26T18:11:36+08:00 ] 172.28.32.149 /likeplus/index.php/Home/Sale/hiswarebyname?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\SaleController.class.php 第 158 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 233 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 233 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 234 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 234 行.
+NOTIC: [8] Undefined index: name1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 238 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 238 行.
+NOTIC: [8] Undefined index: wares D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 255 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.226957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.227017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+
+[ 2018-03-26T18:13:01+08:00 ] 172.28.32.149 /likeplus/index.php/Home/Sale/hiswarebyname?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\SaleController.class.php 第 158 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 233 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 233 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 234 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 234 行.
+NOTIC: [8] Undefined index: name1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 238 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 238 行.
+NOTIC: [8] Undefined index: wares D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 255 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+
+[ 2018-03-26T18:13:06+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 222 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2018-03-26T18:13:31+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 222 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2018-03-26T18:13:32+08:00 ] 172.28.32.149 /likeplus/index.php/sale/saleinfo?token=545d26e03c6b1507ef4c85af88984f29&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 222 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\93b942b5ac94b3b9cad2718c7c96a82a1334b159.file.saleinfo.html.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+

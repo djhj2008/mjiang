@@ -1,0 +1,1202 @@
+[ 2019-02-26T15:24:37+08:00 ] 127.0.0.1 /likeplus/index.php/manager/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035025s ]
+ERR: 非法操作:login
+
+[ 2019-02-26T15:25:07+08:00 ] 127.0.0.1 /likeplus/index.php/manager
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+NOTIC: [8] Undefined index: sale_id D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 145 行.
+
+[ 2019-02-26T15:25:10+08:00 ] 127.0.0.1 /likeplus/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.553094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.553169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.054070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.054122s ]
+
+[ 2019-02-26T15:25:13+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2019-02-26T15:25:44+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+ERR: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+
+[ 2019-02-26T15:26:34+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+ERR: SQLSTATE[HY000] [1130] Host '124.207.250.66' is not allowed to connect to this MySQL server
+
+[ 2019-02-26T15:29:22+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+ERR: SQLSTATE[HY000] [1130] Host '124.207.250.66' is not allowed to connect to this MySQL server
+
+[ 2019-02-26T15:30:11+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+ERR: SQLSTATE[HY000] [1130] Host '124.207.250.66' is not allowed to connect to this MySQL server
+
+[ 2019-02-26T15:32:42+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+ERR: SQLSTATE[HY000] [1130] Host '124.207.250.66' is not allowed to connect to this MySQL server
+
+[ 2019-02-26T15:40:44+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+ERR: SQLSTATE[HY000] [1130] Host '124.207.250.66' is not allowed to connect to this MySQL server
+
+[ 2019-02-26T15:42:58+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2019-02-26T15:43:02+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2019-02-26T15:43:02+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2019-02-26T15:43:03+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2019-02-26T15:43:05+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2019-02-26T15:43:20+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+ERR: SQLSTATE[HY000] [1130] Host '124.207.250.66' is not allowed to connect to this MySQL server
+
+[ 2019-02-26T15:50:11+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2019-02-26T15:50:31+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+ERR: SQLSTATE[HY000] [1130] Host '124.207.250.66' is not allowed to connect to this MySQL server
+
+[ 2019-02-26T15:58:43+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+ERR: SQLSTATE[HY000] [1130] Host '124.207.250.66' is not allowed to connect to this MySQL server
+
+[ 2019-02-26T16:01:03+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `lp_sales` [ RunTime:0.1152s ]
+SQL: SELECT * FROM `lp_sales` WHERE `phone` = '15010150766' LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT * FROM `lp_sales` WHERE `phone` = '15010150766' AND `password` = '72c543da89f2ec5ea03038c3f7400337' LIMIT 1   [ RunTime:0.0099s ]
+
+[ 2019-02-26T16:01:13+08:00 ] 127.0.0.1 /likeplus/index.php/sale/index/token/b2c1ae5b604e06bd7a690253d3114045/sale_id/14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0296s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) AND wares.date BETWEEN '2019-02-26 00:00:00' AND '2019-02-26 23:59:59' ORDER BY wares.date asc  [ RunTime:0.0169s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) ORDER BY wares.date desc LIMIT 3   [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.766152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.766291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001859s ]
+
+[ 2019-02-26T16:01:43+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/index?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0212s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) AND wares.date BETWEEN '2019-02-26 00:00:00' AND '2019-02-26 23:59:59' ORDER BY wares.date asc  [ RunTime:0.0116s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) ORDER BY wares.date desc LIMIT 3   [ RunTime:0.0061s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2019-02-26T16:02:03+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/waretop?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0290s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wares.score' in 'order clause'
+
+[ 2019-02-26T16:02:03+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/hiswarebyname?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\SaleController.class.php 第 177 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 236 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 236 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 237 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 237 行.
+NOTIC: [8] Undefined index: name1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 241 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 241 行.
+NOTIC: [8] Undefined index: wares D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 258 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 258 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+
+[ 2019-02-26T16:02:03+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/hiswarebyname?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\likeplus\Home\Controller\SaleController.class.php 第 177 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 236 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 236 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 237 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 237 行.
+NOTIC: [8] Undefined index: name1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 241 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 241 行.
+NOTIC: [8] Undefined index: wares D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 258 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\9e2f03cd22f407f457dc2fee27f6a22d831be5be.file.hiswarebyname.html.php 第 258 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+
+[ 2019-02-26T16:02:36+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/index?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0446s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) AND wares.date BETWEEN '2019-02-26 00:00:00' AND '2019-02-26 23:59:59' ORDER BY wares.date asc  [ RunTime:0.0158s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) ORDER BY wares.date desc LIMIT 3   [ RunTime:0.1251s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2019-02-26T16:04:31+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/index?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0142s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) AND wares.date BETWEEN '2019-02-26 00:00:00' AND '2019-02-26 23:59:59' ORDER BY wares.date asc  [ RunTime:0.0058s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) ORDER BY wares.date desc LIMIT 3   [ RunTime:0.0206s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2019-02-26T16:04:41+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/waretop?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0154s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wares.score' in 'order clause'
+
+[ 2019-02-26T16:04:50+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/waretop?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0353s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wares.score' in 'order clause'
+
+[ 2019-02-26T16:04:59+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/index?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0201s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) AND wares.date BETWEEN '2019-02-26 00:00:00' AND '2019-02-26 23:59:59' ORDER BY wares.date asc  [ RunTime:0.0040s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) ORDER BY wares.date desc LIMIT 3   [ RunTime:0.0598s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2019-02-26T16:05:08+08:00 ] 127.0.0.1 /likeplus/index.php/Home/Sale/index?token=b2c1ae5b604e06bd7a690253d3114045&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0140s ]
+
+[ 2019-02-26T16:15:23+08:00 ] 127.0.0.1 /mjiang/index.php/Home/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for D:/amp/Apache24/htdocs/mjiang/Runtime/Cache\1ebbc58b84a1f606d403287ee6b3bccc21a84768.file.index.html.php D:\amp\Apache24\htdocs\mjiang\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(D:/amp/Apache24/htdocs/mjiang/Runtime/Cache\1ebbc58b84a1f606d403287ee6b3bccc21a84768.file.index.html.php): No such file or directory D:\amp\Apache24\htdocs\mjiang\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.383010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.383075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009931s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010222s ]
+
+[ 2019-02-26T16:15:23+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/css/style.css
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:23+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/css/bootstrap.min.css
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/css/icons.css
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003210s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/css/metismenu.min.css
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002237s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/modernizr.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/jquery.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/popper.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/jquery.slimscroll.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/metisMenu.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/bootstrap.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/waves.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002707s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/jquery.core.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/jquery.app.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/metisMenu.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/waves.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/jquery.slimscroll.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/jquery.core.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:24+08:00 ] 127.0.0.1 /mjiang/index.php/Home/assets/js/jquery.app.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/css/metismenu.min.css
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/css/bootstrap.min.css
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/css/icons.css
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/modernizr.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/css/style.css
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002030s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/jquery.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/popper.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/metisMenu.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001896s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/jquery.slimscroll.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001801s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/waves.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/jquery.core.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/bootstrap.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/jquery.app.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/metisMenu.min.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/waves.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/jquery.slimscroll.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/jquery.core.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:15:27+08:00 ] 127.0.0.1 /mjiang/index.php/assets/js/jquery.app.js
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-26T16:17:09+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2019-02-26T16:17:38+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2019-02-26T16:19:51+08:00 ] 127.0.0.1 /mjiang/index.php/page-recoverpw.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+ERR: 无法加载控制器:Page-recoverpw
+
+[ 2019-02-26T16:22:09+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2019-02-26T16:22:42+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001776s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2019-02-26T16:23:11+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2019-02-26T16:24:14+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2019-02-26T16:24:29+08:00 ] 127.0.0.1 /mjiang/index.php/login?
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2019-02-26T16:24:57+08:00 ] 127.0.0.1 /mjiang/index.php/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2019-02-26T16:31:49+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2019-02-26T16:31:52+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2019-02-26T16:31:55+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2019-02-26T16:32:49+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005718s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2019-02-26T16:33:44+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2019-02-26T16:34:04+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2019-02-26T16:34:51+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2019-02-26T16:34:55+08:00 ] 127.0.0.1 /mjiang/index.php/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2019-02-26T16:48:26+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2019-02-26T16:49:08+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2019-02-26T16:49:40+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2019-02-26T16:49:41+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2019-02-26T16:49:41+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2019-02-26T16:49:43+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2019-02-26T16:49:57+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2019-02-26T16:49:58+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2019-02-26T16:49:59+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2019-02-26T16:49:59+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2019-02-26T16:49:59+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2019-02-26T16:50:57+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2019-02-26T16:55:47+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2019-02-26T17:08:09+08:00 ] 127.0.0.1 /mjiang/index.php/login?
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2019-02-26T17:08:14+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2019-02-26T17:08:16+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2019-02-26T17:08:22+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2019-02-26T17:08:38+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+
+[ 2019-02-26T17:11:07+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+
+[ 2019-02-26T17:15:55+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `lp_sales` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `lp_sales` WHERE `phone` = '423532' LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+
+[ 2019-02-26T17:20:19+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'likeplus.user' doesn't exist
+
+[ 2019-02-26T17:20:47+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'likeplus.user' doesn't exist
+
+[ 2019-02-26T17:22:36+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 8 行.
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'likeplus.user' doesn't exist
+
+[ 2019-02-26T17:22:54+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 8 行.
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'likeplus.user' doesn't exist
+
+[ 2019-02-26T17:24:12+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 8 行.
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `user` WHERE `name` = '' LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+
+[ 2019-02-26T17:24:24+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 8 行.
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0333s ]
+SQL: SELECT * FROM `user` WHERE `name` = '' LIMIT 1   [ RunTime:0.0348s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+
+[ 2019-02-26T17:24:42+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 8 行.
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `user` WHERE `name` = '' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+
+[ 2019-02-26T17:26:11+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 8 行.
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+
+[ 2019-02-26T17:26:25+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0541s ]
+SQL: SELECT * FROM `user` WHERE `name` = 'e3432' LIMIT 1   [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+
+[ 2019-02-26T17:27:17+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Undefined index: password D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 8 行.
+NOTIC: [8] Undefined index: name D:\amp\Apache24\htdocs\mjiang\Home\Controller\LoginController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+
+[ 2019-02-26T17:32:53+08:00 ] 127.0.0.1 /mjiang/index.php/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `user` WHERE `name` = 'fsdf' LIMIT 1   [ RunTime:0.0077s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001204s ]
+

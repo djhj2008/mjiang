@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>爱加HOME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/images/favicon.ico">
+        <!-- App css -->
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/style.css?version=1.01.02" rel="stylesheet" type="text/css" />
+        <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/modernizr.min.js"></script>
+
+        <js file='__PUBLIC__/Uploadify/jquery-1.9.1.min.js'/>
+        <js file='__PUBLIC__/Uploadify/jquery.uploadify.min.js'/>
+        <!-- Bootstrap fileupload css -->
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/bootstrap-fileupload/bootstrap-fileupload.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="<%$smarty.const.ACSS_URL%>main.css?version=1.01.02" id="color-switcher-link">
+        <link rel="stylesheet" href="<%$smarty.const.ACSS_URL%>animations.css">
+        <link rel="stylesheet" href="<%$smarty.const.ACSS_URL%>fonts.css">
+
+    </head>
+    <body>
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="#" class="logo">
+                        <span>
+                        <%$name%>
+                        </span>
+                        <i>
+
+                        </i>
+                    </a>
+                </div>
+                <nav class="navbar-custom">
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-light waves-effect">
+                                <i class="dripicons-menu"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+                            <li class="menu-title">牧江科技</li>
+                            <li>
+                                <a href="<%$smarty.const.__CONTROLLER__%>/index">
+                                    <i class="fa fa-desktop"></i> <span> 首页 </span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="<%$smarty.const.__CONTROLLER__%>/search">
+                                    <i class="fa fa-search"></i> <span>搜索</span> </a></li>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
+                                		<li><a href="<%$smarty.const.__CONTROLLER__%>/addshed">添加牛舍</a></li>
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><i class="fa fa-group"></i> <span> 员工管理 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/chkworker">员工信息</a></li>
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addworker">添加员工</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!--li>
+                                <a href="#"><i class="fi-share"></i> <span> 开发中 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level nav" aria-expanded="false">
+                                    <li><a href="javascript: void(0);">开发中 1.1</a></li>
+                                    <li><a href="javascript: void(0);" aria-expanded="false">开发中 1.2 <span class="menu-arrow"></span></a>
+                                        <ul class="nav-third-level nav" aria-expanded="false">
+                                            <li><a href="javascript: void(0);">开发中 2.1</a></li>
+                                            <li><a href="javascript: void(0);">开发中 2.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li-->
+
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+                </div>
+                <!-- Sidebar -left -->
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <h3>商品名称:<%$ware['name']%></h3>
+                    <h3>编号:<%$ware['number']%></h3>
+                    <h3>进货价:<%$ware['in_price']%></h3>
+                    <h3>售价:<%$ware['out_price']%></h3>
+                    <h3>其他平台价格:<%$ware['other_price']%></h3>
+                    <h3>商品介绍:<br><%$ware['factory_info']%></h3>
+                    <h3>上架日期:<%$ware['date']%></h3>
+                    <h3>视频地址:<%$ware['video_url']%></h3>
+                    <h3>图片:</h3>
+                    <img src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$ware['pic_url']%>" alt="" height="300">
+                    <div >
+                        <div class="clo-2 mt-3">
+                            <button type="button" class="btn btn-github" onclick="checkware()">
+                                查看商品
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+    </body>
+    <footer class="footer text-right">
+        Copyright &copy; 2018.爱加社区
+    </footer>
+
+<script type="text/javascript">
+    function checkware(){
+        window.location.href="<%$smarty.const.__CONTROLLER__%>/chkwaremore?token=<%$token%>&sale_id=<%$id%>&date1=<%$date1%>&date2=<%$date2%>";
+    }
+</script>
+    <!-- jQuery  -->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.min.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/popper.min.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/bootstrap.min.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/metisMenu.min.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/waves.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.slimscroll.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/counterup/jquery.counterup.min.js"></script>
+
+    <!-- Bootstrap fileupload js -->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+
+    <!-- Chart JS -->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/chart.js/chart.bundle.js"></script>
+
+    <!-- init dashboard -->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/pages/jquery.dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.core.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.app.js"></script>
+
+    <script src="<%$smarty.const.AJS_URL%>compressed.js"></script>
+    <script src="<%$smarty.const.AJS_URL%>main.js"></script>
+</html>

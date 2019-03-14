@@ -1,0 +1,72 @@
+[ 2018-03-21T11:04:04+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Census\mysaleinfo.html"  on line 76 "&lt;%if%&gt;" missing if condition
+
+[ 2018-03-21T14:15:28+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_sales sale2 WHERE ( sale1.lev1_id=sale2.auto_id ) ORDER BY group_num desc' at line 1
+
+[ 2018-03-21T14:17:06+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_sales sale2 WHERE ( sale1.lev1_id=sale2.auto_id ) ORDER BY group_num desc' at line 1
+
+[ 2018-03-21T14:17:08+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_sales sale2 WHERE ( sale1.lev1_id=sale2.auto_id ) ORDER BY group_num desc' at line 1
+
+[ 2018-03-21T14:17:10+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_sales sale2 WHERE ( sale1.lev1_id=sale2.auto_id ) ORDER BY group_num desc' at line 1
+
+[ 2018-03-21T14:17:12+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_sales sale2 WHERE ( sale1.lev1_id=sale2.auto_id ) ORDER BY group_num desc' at line 1
+
+[ 2018-03-21T14:17:17+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_sales sale2 WHERE ( sale1.lev1_id=sale2.auto_id ) ORDER BY group_num desc' at line 1
+
+[ 2018-03-21T14:17:36+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_sales sale2 WHERE ( sale1.lev1_id=sale2.auto_id ) ORDER BY group_num desc' at line 1
+
+[ 2018-03-21T14:17:53+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2018-03-21T14:18:41+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2018-03-21T14:18:42+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2018-03-21T14:18:46+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2018-03-21T14:18:50+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2018-03-21T14:19:08+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2018-03-21T14:19:09+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2018-03-21T14:19:12+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2018-03-21T14:19:15+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2018-03-21T14:29:31+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sale1.name' in 'field list'
+
+[ 2018-03-21T14:34:15+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on lp_sales as sale2 on sale1.lev1_id=sale2.auto_id  ORDER BY sale1.group_name d' at line 1
+
+[ 2018-03-21T14:48:36+08:00 ] ::1 /likeplus/index.php/Census/auto_reg
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'lev1_id' doesn't have a default value
+
+[ 2018-03-21T15:17:45+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as sale1 left join lp_sales as sale2 on sale1.lev1_id=sale2.auto_id  ORDER BY sa' at line 1
+
+[ 2018-03-21T15:19:07+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as sale1 left join lp_sales as sale2 on sale1.lev1_id=sale2.auto_id  ORDER BY sa' at line 1
+
+[ 2018-03-21T15:25:14+08:00 ] ::1 /likeplus/index.php/Census/mysaleinfo
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'group_name' in order clause is ambiguous
+
+[ 2018-03-21T16:26:58+08:00 ] ::1 /likeplus/index.php/Home/Sale/hisware?token=fc5cde23a6d1fb35cad7ed4f25996561&sale_id=14&date1=2018-03-21&date2=2018-03-21
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+

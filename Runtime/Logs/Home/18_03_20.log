@@ -1,0 +1,6 @@
+[ 2018-03-20T11:24:38+08:00 ] ::1 /likeplus/index.php/census
+ERR: 非法操作:index
+
+[ 2018-03-20T11:33:04+08:00 ] ::1 /likeplus/index.php/Home/Census/regsale?token=&sale_id=
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'likeplus.lp_census' doesn't exist
+

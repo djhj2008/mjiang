@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MJiang Tech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/images/favicon.ico">
+
+        <!-- App css -->
+        <!--link href="<%$smarty.const.ABOOT_URL%>bootstrap.css" rel="stylesheet" type="text/css" /-->
+        <!--link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" /-->>
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/style.css" rel="stylesheet" type="text/css" />
+        <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/modernizr.min.js"></script>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<%$smarty.const.ACSS_URL%>fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"/>
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>themes/explorer-fa/theme.css" media="all" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="<%$smarty.const.AJS_URL%>plugins/sortable.js" type="text/javascript"></script>
+        <script src="<%$smarty.const.AJS_URL%>fileinput.js?version=00.00.02" type="text/javascript"></script>
+        <script src="<%$smarty.const.AJS_URL%>locales/zh.js?version=00.00.02" type="text/javascript"></script>
+        <script src="<%$smarty.const.PUBLIC_ROOT_URL%>themes/explorer-fa/theme.js" type="text/javascript"></script>
+        <script src="<%$smarty.const.PUBLIC_ROOT_URL%>themes/fa/theme.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="#" class="logo">
+                        <span>
+                        <%$name%>
+                        </span>
+                        <i>
+
+                        </i>
+                    </a>
+                </div>
+                <nav class="navbar-custom">
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-light waves-effect">
+                                <i class="dripicons-menu"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+                            <li class="menu-title">牧江科技</li>
+                            <li>
+                                <a href="<%$smarty.const.__CONTROLLER__%>/index">
+                                    <i class="fa fa-desktop"></i> <span> 首页 </span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="<%$smarty.const.__CONTROLLER__%>/search">
+                                    <i class="fa fa-search"></i> <span>搜索</span> </a></li>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
+                                		<li><a href="<%$smarty.const.__CONTROLLER__%>/addshed">添加牛舍</a></li>
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><i class="fa fa-group"></i> <span> 员工管理 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/chkworker">员工信息</a></li>
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addworker">添加员工</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!--li>
+                                <a href="#"><i class="fi-share"></i> <span> 开发中 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level nav" aria-expanded="false">
+                                    <li><a href="javascript: void(0);">开发中 1.1</a></li>
+                                    <li><a href="javascript: void(0);" aria-expanded="false">开发中 1.2 <span class="menu-arrow"></span></a>
+                                        <ul class="nav-third-level nav" aria-expanded="false">
+                                            <li><a href="javascript: void(0);">开发中 2.1</a></li>
+                                            <li><a href="javascript: void(0);">开发中 2.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li-->
+
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+                </div>
+                <!-- Sidebar -left -->
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                        <!-- Form row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-box">
+                                    <h4 class="m-t-0 header-title">详细资料</h4>
+                                    <form id="myForm" action="<%$smarty.const.__CONTROLLER__%>/chkwareedit?" enctype="multipart/form-data" method="post">
+                                    <div class="row">
+                                    <div class="col-md-6">	
+                                        <div class="form-row">
+                                            <div class="form-group  col-md-4">
+                                                <label for="inputSN" class="col-form-label">编号</label>
+                                                <input required type="number" class="form-control" id="sn" name="sn" placeholder="编号" value="<%$ani['sn']%>">
+                                            </div>
+                                            <div class="form-group  col-md-4">
+                                                <label for="inputSN" class="col-form-label">设备ID</label>
+                                                <input type="number" class="form-control" id="devid" name="devid" placeholder="ID号" value="<%$ani['devid']%>">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                            		<label for="inputSex" class="col-form-label">性别</label>
+						                                    <select name="sex" id="sex" class="form-control" data-style="btn-light">
+						                                    	<option value ="1">公</option>
+						                                      <option value ="2">母</option> 
+						                                    </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="kind" class="col-form-label">品种</label>
+						                                    <select name="kind" id="kind" class="form-control" data-style="btn-light">
+						                                        <%foreach $kind as $v%>
+						                                            <option value ="<%$v['id']%>"><%$v['name']%></option>
+						                                        <%/foreach%>
+						                                    </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="type" class="col-form-label">类型</label></label>
+						                                    <select name="type" id="type" class="form-control" data-style="btn-light">
+						                                        <%foreach $type as $v%>
+						                                            <option value ="<%$v['id']%>"><%$v['name']%></option>
+						                                        <%/foreach%>
+						                                    </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label for="inputCity" class="col-form-label">舍号</label>
+		                                    				<select name="shedid" id="shedid" class="form-control" data-style="btn-light" onchange='shedChange(selectedIndex);'>
+						                                        <%foreach $field as $v%>
+						                                            <option value ="<%$v['shedid']%>"><%$v['shedid']%></option>
+						                                        <%/foreach%>
+						                                    </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputState" class="col-form-label">区域</label>
+						                                    <select name="area" id="area" class="form-control" data-style="btn-light">
+						                                    	<option value ="1">A</option>
+						                                      <option value ="2">B</option> 
+						                                    </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputZip" class="col-form-label">栏号</label>
+                                                <input name="fold" id="fold" type="text" class="form-control" value="<%$ani['fold']%>" placeholder="空">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                       			<div class="form-group col-md-6">
+	                                            	<label for="inputZip" class="col-form-label">饲养员</label>
+	                                           		<input name="worker1" id="worker1" type="text" class="form-control" readonly="readonly">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputZip" class="col-form-label">责任兽医</label>
+                                                <input name="worker2" id="worker2" type="text" class="form-control" readonly="readonly">
+                                            </div>
+                                       	</div>
+                                        <div class="form-row">
+                                       			<div class="form-group col-md-4">
+	                                            	<label for="inputZip" class="col-form-label">出生日期</label>
+	                                           	 	<input class="form-control" type="date" id="bdate" name="bdate" value="<%$ani['birthday']%>">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputZip" class="col-form-label">出生重量(斤)</label>
+                                                <input type="text" class="form-control" id="bweight" name="bweight" value="<%$ani['birthweight']%>">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="childnum" class="col-form-label">胎次(次)</label>
+                                                <input type="text" class="form-control" id="childnum " name="childnum" value="<%$ani['childnum']%>">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                       			<div class="form-group col-md-6">
+	                                            	<label for="inputZip" class="col-form-label">父亲编号</label>
+                                                <input type="text" class="form-control" id="fasn" name="fasn" value="<%$ani['fathersn']%>">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputZip" class="col-form-label">母亲编号</label>
+                                                <input type="text" class="form-control" id="mosn" name="mosn" value="<%$ani['mothersn']%>">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                       			<div class="form-group col-md-6">
+	                                            	<label for="entertype" class="col-form-label">入场类型</label>
+						                                    <select name="entertype" id="entertype" class="form-control" data-style="btn-light">
+						                                        <%foreach $entertype as $v%>
+						                                            <option value ="<%$v['id']%>"><%$v['name']%></option>
+						                                        <%/foreach%>
+						                                    </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="oweight" class="col-form-label">入场体重(斤)</label>
+                                                <input type="text" class="form-control" id="oweight" name="oweight" value="<%$ani['leaveweight']%>">
+                                            </div>
+ 
+                                        </div>
+                                        <div class="form-row">
+                                       			<div class="form-group col-md-6">
+	                                            	<label for="inputZip" class="col-form-label">入场来源</label>
+                                                <input type="text" class="form-control" id="insource" name="insource" value="<%$ani['entersource']%>">
+                                            </div>
+                                          	<div class="form-group col-md-6">
+                                                <label for="inputZip" class="col-form-label">入场日期</label>
+                                                <input class="form-control" type="date" id="indate" name="indate" value="<%$ani['enterdate']%>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+		                                    <div class="form-row">
+		                                    <div class="form-group col-md-6">
+	                                   	 		<img class="" src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$ani['photo']%>" alt="" height="300" id="photo">	
+	                                   	 		<input  type="hidden" class="form-control" id="pic_url" name="pic_url" value="<%$ani['photo']%>"/>		
+		                                    </div>
+		                                    </div>
+                                    		<div class="form-row">
+                                    		<div class="form-group col-md-6">
+	                                   	 			<label for="file1"  class="col-form-label">修改照片(选择图片后请点击上传):</label>
+		                                        <input id="file1" name="logo" type="file" multiple data-preview-file-type="any" data-show-caption="true">
+		                                    </div>
+		                                    </div>
+		                                    <div class="form-row">
+		                                    <div class="form-group col-md-6">
+                                   		 			<label for="info" class="col-form-label">备注</label>
+		                                        <textarea class="form-control" name="info" id="info" ><%$ani['info']%></textarea>
+		                                    </div>
+		                                    </div>
+	                                  </div>
+	
+                                    <div class="col-md-6">
+                                    <button type="submit" onclick="" class="btn btn-primary">修改</button>
+                                    </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>                
+                        </div>
+                        <!-- end row -->
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+        </div>
+        <footer class="footer text-right">
+            Copyright &copy; 2018.牧江科技
+        </footer>
+        <!-- END wrapper -->
+    </body>
+
+
+    <!-- jQuery  -->
+    <!--script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.min.js"></script-->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/popper.min.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/bootstrap.min.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/metisMenu.min.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/waves.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.slimscroll.js"></script>
+
+    <!-- Init js -->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/pages/jquery.form-pickers.init.js"></script>
+
+    <!-- App js -->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.core.js"></script>
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.app.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#file1").fileinput({
+                language: 'zh',
+                'theme': 'explorer-fa',
+                uploadUrl: "<%$smarty.const.__CONTROLLER__%>/upload2?token=<%$token%>&userid=<%$id%>",// 上传路径
+                uploadAsync: false,//是否异步传输
+                maxFileCount: 1,//最大文件上传数量
+                'allowedFileExtensions': ['jpg', 'png', 'gif'],
+
+            }).on('filebatchpreupload', function(event, data, id, index) {
+
+
+            }).on('filebatchuploadsuccess', function(event, data) {//上传成功从服务器端返回的数据（即保存的文件名称）
+                var pic_url = document.getElementById("pic_url");
+                //var pic_url2 = document.getElementById("pic_url2");
+                var path =data.response[0].flag;
+                pic_url.value = path;
+                document.getElementById("photo").src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/"+path;
+                //pic_url2.value = "上传成功.";
+                //alert(path);
+            });
+            
+            /*
+             $("#test-upload").on('fileloaded', function(event, file, previewId, index) {
+             alert('i = ' + index + ', id = ' + previewId + ', file = ' + file.name);
+             });
+             */
+         		var name1 = new Array();
+         		var name2 = new Array();
+         		var count=0;
+         		<%foreach $field as $v%>
+         			name1[count]="<%$v['workername1']%>";
+         			name2[count]="<%$v['workername2']%>";
+         			count++;
+         		<%/foreach%>
+         		
+     				var workerid = <%$shedindex%>;
+     				var workername1=name1[workerid];
+     				var workername2=name2[workerid];
+     				document.getElementById('shedid')[workerid].selected=true;
+     				document.getElementById("worker1").value=workername1;
+     				document.getElementById("worker2").value=workername2;
+     				
+     				var typeid = <%$typeindex%>;
+     				document.getElementById('type')[typeid].selected=true;
+     				var kindid = <%$kindindex%>;
+     				document.getElementById('kind')[kindid].selected=true;
+     				var entertypeid = <%$entertypeindex%>;
+     				document.getElementById('entertype')[entertypeid].selected=true;
+     				var sexid = <%$ani['sex']%>-1;
+     				document.getElementById('sex')[sexid].selected=true;
+     				var areaid = <%$ani['area']%>-1;
+     				document.getElementById('area')[areaid].selected=true;
+     										//下拉框选择改变事件
+         		//alert(workername1);
+        });
+        
+				function shedChange(values){
+         		var name1 = new Array();
+         		var name2 = new Array();
+         		var count=0;
+         		<%foreach $field as $v%>
+         			name1[count]="<%$v['workername1']%>";
+         			name2[count]="<%$v['workername2']%>";
+         			count++;
+         		<%/foreach%>
+     				var workername1=name1[values];
+     				var workername2=name2[values];
+     				document.getElementById("worker1").value=workername1;
+     				document.getElementById("worker2").value=workername2;
+     				//alert(values);
+     		};
+     		
+				function formSubmit(){
+					//var file1= document.getElementById("file1").val;
+					//alert(file1);
+					return false;
+					//document.getElementById("myForm").submit()
+				}     		
+     		
+    </script>
+</html>

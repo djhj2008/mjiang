@@ -1,0 +1,91 @@
+[ 2018-03-11T15:27:55+08:00 ] 192.168.199.249 /likeplus/index.php/sale/userinfo
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'likeplus.lp_user' doesn't exist
+
+[ 2018-03-11T15:39:56+08:00 ] 192.168.199.249 /likeplus/index.php/devselect/select/0/name/1/%E7%AE%A1%E7%90%86%E5%91%98
+ERR: 无法加载控制器:Devselect
+
+[ 2018-03-11T15:40:36+08:00 ] 192.168.199.249 /likeplus/index.php/devselect/select/0/name/1/%E7%AE%A1%E7%90%86%E5%91%98
+ERR: 无法加载控制器:Devselect
+
+[ 2018-03-11T15:46:22+08:00 ] 192.168.199.249 /likeplus/index.php/sale/userinfo
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\userinfo.html"  on line 197 "&lt;td&gt;&lt;%v[&quot;name&quot;]%&gt;&lt;/td&gt;"  - Unexpected "[", expected one of: "%>" , " "
+
+[ 2018-03-11T16:25:31+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 168 "&lt;%if($user)%&gt;" unknown function "if"
+
+[ 2018-03-11T16:25:38+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 168 "&lt;%if($user)%&gt;" unknown function "if"
+
+[ 2018-03-11T16:28:20+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 168 "&lt;%if($user){%&gt;" unknown function "if"
+
+[ 2018-03-11T16:29:24+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 172 "&lt;%}%&gt;"  - Unexpected "}"
+
+[ 2018-03-11T16:50:52+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 168 "&lt;%if condition=&quot;empty($user) neq true &quot;%&gt;"  - Unexpected "="
+
+[ 2018-03-11T16:51:26+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 169 "&lt;p class=&quot;text-muted font-14 mb-2&quot;&gt;"  - Unexpected "text", expected one of: "%>" , " "
+
+[ 2018-03-11T16:51:27+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 169 "&lt;p class=&quot;text-muted font-14 mb-2&quot;&gt;"  - Unexpected "text", expected one of: "%>" , " "
+
+[ 2018-03-11T16:51:48+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 172 "&lt;%else/%&gt;"  - Unexpected "%>"
+
+[ 2018-03-11T16:52:19+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 172 "&lt;%/else%&gt;" unknown tag "elseclose"
+
+[ 2018-03-11T16:52:19+08:00 ] 192.168.199.249 /likeplus/index.php/sale/buyware?uid=1
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 172 "&lt;%/else%&gt;" unknown tag "elseclose"
+
+[ 2018-03-11T17:09:25+08:00 ] 192.168.199.224 /likeplus/index.php/sale/buyware?ware_id=4
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 185 "class=&quot;btn btn-github&quot; onclick=&quot;location.href='&lt;%$smarty.const.__APP__%&gt;/sale/userinfo?ware_id=&lt;%$ware[0][\'id\']%&gt;'&quot;&gt;"  - Unexpected "\"
+
+[ 2018-03-11T17:09:27+08:00 ] 192.168.199.224 /likeplus/index.php/sale/buyware?ware_id=4
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 185 "class=&quot;btn btn-github&quot; onclick=&quot;location.href='&lt;%$smarty.const.__APP__%&gt;/sale/userinfo?ware_id=&lt;%$ware[0][\'id\']%&gt;'&quot;&gt;"  - Unexpected "\"
+
+[ 2018-03-11T17:15:41+08:00 ] 192.168.199.224 /likeplus/index.php/Home/Sale/sale/userinfo/4
+ERR: 非法操作:sale
+
+[ 2018-03-11T17:17:07+08:00 ] 192.168.199.224 /likeplus/index.php/Home/Sale/sale/userinfo/4
+ERR: 非法操作:sale
+
+[ 2018-03-11T17:19:01+08:00 ] 192.168.199.209 /likeplus/index.php/Home/Sale/sale/userinfo
+ERR: 非法操作:sale
+
+[ 2018-03-11T17:20:55+08:00 ] 192.168.199.224 /likeplus/index.php/sale/buyware?ware_id=4
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 176 "&lt;%endif%&gt;" unknown tag "endif"
+
+[ 2018-03-11T17:22:52+08:00 ] 192.168.199.224 /likeplus/index.php/sale/buyware?ware_id=4
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\buyware.html"  on line 176 "&lt;%if%&gt;" missing if condition
+
+[ 2018-03-11T17:28:11+08:00 ] 192.168.199.224 /likeplus/index.php/Home/Sale/sale/userinfo
+ERR: 非法操作:sale
+
+[ 2018-03-11T17:28:19+08:00 ] 192.168.199.209 /likeplus/index.php/Home/Sale/sale/userinfo
+ERR: 非法操作:sale
+
+[ 2018-03-11T17:32:07+08:00 ] 192.168.199.224 /likeplus/index.php/Home/Sale/sale/userinfo
+ERR: 非法操作:sale
+
+[ 2018-03-11T17:32:18+08:00 ] 192.168.199.209 /likeplus/index.php/Home/Sale/sale/userinfo
+ERR: 非法操作:sale
+
+[ 2018-03-11T17:34:26+08:00 ] 192.168.199.224 /likeplus/index.php/Home/Sale/sale/userinfo
+ERR: 非法操作:sale
+
+[ 2018-03-11T17:36:33+08:00 ] 192.168.199.224 /likeplus/index.php/Home/Sale/sale/userinfo
+ERR: 非法操作:sale
+
+[ 2018-03-11T20:58:33+08:00 ] 192.168.199.224 /likeplus/index.php/Home/Sale/index
+ERR: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+
+[ 2018-03-11T22:31:04+08:00 ] 192.168.199.209 /likeplus/index.php/Home/Sale/userinfo?ware_id=4
+ERR: Syntax Error in template "D:/amp/Apache24/htdocs/likeplus/Home/View\Sale\userinfo.html"  on line 197 "&lt;a href=&quot;&lt;%$smarty.const.__APP__%&gt;/sale/buyware?uid=&lt;%$v['auto_id']%&gt;&amp;ware_id=&lt;%ware_id%&gt;&quot;&gt;选择&lt;/a&gt;&lt;/td&gt;" unknown tag "ware_id"
+
+[ 2018-03-11T23:04:13+08:00 ] 192.168.199.209 /likeplus/index.php/sale/usersave?ware_id=4
+ERR: 模板不存在:D:/amp/Apache24/htdocs/likeplus/Home/View/Sale/usersave.html
+

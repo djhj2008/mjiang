@@ -1,0 +1,514 @@
+[ 2018-03-29T11:20:25+08:00 ] ::1 /likeplus/index.php/sale/buyware?token=fc5cde23a6d1fb35cad7ed4f25996561&ware_id=35&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028329s ]
+NOTIC: [8] Undefined index: uid D:\amp\Apache24\htdocs\likeplus\Home\Controller\SaleController.class.php 第 316 行.
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `lp_wares` WHERE `auto_id` = 35  [ RunTime:0.0296s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 247 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 247 行.
+NOTIC: [8] Undefined index: addr D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 249 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 249 行.
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 413 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 413 行.
+NOTIC: [8] Undefined index: addr D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 415 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 415 行.
+NOTIC: [8] Undefined index: user D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 428 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 428 行.
+NOTIC: [8] Undefined index: addr D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 430 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 430 行.
+NOTIC: [8] Undefined index: uid D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 438 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\ed96b13a0f0baf5f080f8061b9c71d0581f003d5.file.buyware.html.php 第 438 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.688857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.688913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011256s ]
+
+[ 2018-03-29T11:20:29+08:00 ] ::1 /likeplus/index.php/Home/Sale/index?token=fc5cde23a6d1fb35cad7ed4f25996561&sale_id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0397s ]
+SQL: SELECT wares.auto_id as id,wares.name as name,wares.out_price as out_price,wares.other_price as other_price,wares.factory_info as info,wares.auto_id as wid,wares.pic_url as pic_url,wares.pic_path as pic_path,type.name as tname FROM lp_wares wares,lp_ware_type type WHERE (  wares.type = type.type  ) AND (   wares.flag = 1 ) AND wares.date BETWEEN '2018-03-29 00:00:00' AND '2018-03-29 23:59:59' ORDER BY wares.date asc  [ RunTime:0.0516s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.291198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.291286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2018-03-29T11:23:01+08:00 ] ::1 /likeplus/index.php/Home/Manager/myorder?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 758 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 759 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 762 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 763 行.
+SQL: SHOW COLUMNS FROM `lp_order` [ RunTime:0.2130s ]
+SQL: SELECT DISTINCT  myorder.auto_id as auto_id,myorder.time as time,myorder.sn as sn,myware.name as name,myorder.ware_model as model,myorder.count as count,myorder.winfo as winfo,myuser.name as uname,myuser.phone as phone,myuser.province as pro,myuser.city as city,myuser.area as area,myuser.addr as addr,myorder.price as price,mysale.auto_id as sid,mysale.name as sname,mysale.group_name as group_name,myorder.express as express,myorder.flag as flag FROM lp_order myorder,lp_users myuser,lp_wares myware,lp_sales mysale WHERE (  myorder.user_id=myuser.auto_id ) AND (  myorder.ware_id=myware.auto_id ) AND (  myorder.sale_id=mysale.auto_id ) AND myorder.time BETWEEN '2018-03-29 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.0705s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: myorder D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.319520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.319579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2018-03-29T11:23:02+08:00 ] ::1 /likeplus/index.php/Home/Manager/myorder?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 758 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 759 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 762 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 763 行.
+SQL: SHOW COLUMNS FROM `lp_order` [ RunTime:0.0323s ]
+SQL: SELECT DISTINCT  myorder.auto_id as auto_id,myorder.time as time,myorder.sn as sn,myware.name as name,myorder.ware_model as model,myorder.count as count,myorder.winfo as winfo,myuser.name as uname,myuser.phone as phone,myuser.province as pro,myuser.city as city,myuser.area as area,myuser.addr as addr,myorder.price as price,mysale.auto_id as sid,mysale.name as sname,mysale.group_name as group_name,myorder.express as express,myorder.flag as flag FROM lp_order myorder,lp_users myuser,lp_wares myware,lp_sales mysale WHERE (  myorder.user_id=myuser.auto_id ) AND (  myorder.ware_id=myware.auto_id ) AND (  myorder.sale_id=mysale.auto_id ) AND myorder.time BETWEEN '2018-03-29 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.0241s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: myorder D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2018-03-29T11:23:07+08:00 ] ::1 /likeplus/index.php/Home/Manager/myorder?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `lp_order` [ RunTime:0.0568s ]
+SQL: SELECT DISTINCT  myorder.auto_id as auto_id,myorder.time as time,myorder.sn as sn,myware.name as name,myorder.ware_model as model,myorder.count as count,myorder.winfo as winfo,myuser.name as uname,myuser.phone as phone,myuser.province as pro,myuser.city as city,myuser.area as area,myuser.addr as addr,myorder.price as price,mysale.auto_id as sid,mysale.name as sname,mysale.group_name as group_name,myorder.express as express,myorder.flag as flag FROM lp_order myorder,lp_users myuser,lp_wares myware,lp_sales mysale WHERE (  myorder.user_id=myuser.auto_id ) AND (  myorder.ware_id=myware.auto_id ) AND (  myorder.sale_id=mysale.auto_id ) AND myorder.time BETWEEN '2018-03-28 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.3656s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2018-03-29T11:23:40+08:00 ] ::1 /likeplus/index.php/Home/Manager/index?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `lp_sales` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `lp_sales` WHERE `auto_id` = 1 AND `role` = 1 LIMIT 1   [ RunTime:0.0359s ]
+SQL: SHOW COLUMNS FROM `lp_ware_type` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `lp_ware_type`  [ RunTime:0.0192s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2018-03-29T11:23:42+08:00 ] ::1 /likeplus/index.php/Home/Manager/myorder?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 758 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 759 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 762 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 763 行.
+SQL: SHOW COLUMNS FROM `lp_order` [ RunTime:0.0472s ]
+SQL: SELECT DISTINCT  myorder.auto_id as auto_id,myorder.time as time,myorder.sn as sn,myware.name as name,myorder.ware_model as model,myorder.count as count,myorder.winfo as winfo,myuser.name as uname,myuser.phone as phone,myuser.province as pro,myuser.city as city,myuser.area as area,myuser.addr as addr,myorder.price as price,mysale.auto_id as sid,mysale.name as sname,mysale.group_name as group_name,myorder.express as express,myorder.flag as flag FROM lp_order myorder,lp_users myuser,lp_wares myware,lp_sales mysale WHERE (  myorder.user_id=myuser.auto_id ) AND (  myorder.ware_id=myware.auto_id ) AND (  myorder.sale_id=mysale.auto_id ) AND myorder.time BETWEEN '2018-03-29 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.0293s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: myorder D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2018-03-29T11:23:43+08:00 ] ::1 /likeplus/index.php/Home/Manager/myware?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.3133s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-29 00:00:00' AND '2018-03-29 23:59:59'  [ RunTime:0.0510s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.323722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.323806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2018-03-29T11:23:45+08:00 ] ::1 /likeplus/index.php/Home/Manager/myware?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-29 00:00:00' AND '2018-03-29 23:59:59'  [ RunTime:0.5195s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001670s ]
+
+[ 2018-03-29T11:23:49+08:00 ] ::1 /likeplus/index.php/Home/Manager/mysaleinfo?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `lp_sales` [ RunTime:0.5059s ]
+SQL: SELECT `role` FROM `lp_sales` WHERE `auto_id` = 1 LIMIT 1   [ RunTime:0.0441s ]
+SQL: SELECT * FROM `lp_sales` WHERE `role` <> 1 AND `group_name` > 1019  [ RunTime:0.0233s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.235250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.235329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2018-03-29T11:24:14+08:00 ] ::1 /likeplus/index.php/Home/Manager/myware?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-29 00:00:00' AND '2018-03-29 23:59:59'  [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001360s ]
+
+[ 2018-03-29T11:24:16+08:00 ] ::1 /likeplus/index.php/Home/Manager/myorder?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 758 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 759 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 762 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 763 行.
+SQL: SHOW COLUMNS FROM `lp_order` [ RunTime:0.1037s ]
+SQL: SELECT DISTINCT  myorder.auto_id as auto_id,myorder.time as time,myorder.sn as sn,myware.name as name,myorder.ware_model as model,myorder.count as count,myorder.winfo as winfo,myuser.name as uname,myuser.phone as phone,myuser.province as pro,myuser.city as city,myuser.area as area,myuser.addr as addr,myorder.price as price,mysale.auto_id as sid,mysale.name as sname,mysale.group_name as group_name,myorder.express as express,myorder.flag as flag FROM lp_order myorder,lp_users myuser,lp_wares myware,lp_sales mysale WHERE (  myorder.user_id=myuser.auto_id ) AND (  myorder.ware_id=myware.auto_id ) AND (  myorder.sale_id=mysale.auto_id ) AND myorder.time BETWEEN '2018-03-29 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.1810s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: myorder D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2018-03-29T11:24:18+08:00 ] ::1 /likeplus/index.php/Home/Manager/myware?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0498s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-29 00:00:00' AND '2018-03-29 23:59:59'  [ RunTime:0.0299s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002110s ]
+
+[ 2018-03-29T11:24:22+08:00 ] ::1 /likeplus/index.php/Home/Manager/chkwaremore?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 382 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 383 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 386 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 387 行.
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-29 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.4684s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.375781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.375892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2018-03-29T11:24:29+08:00 ] ::1 /likeplus/index.php/Home/Manager/chkwaremore?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1&date1=2018-03-29&date2=2018-03-29
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0296s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-27 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.0675s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001993s ]
+
+[ 2018-03-29T11:24:51+08:00 ] ::1 /likeplus/index.php/Home/Manager/chkwaremore?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1&date1=2018-03-27&date2=2018-03-29
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-26 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.0440s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2018-03-29T11:25:25+08:00 ] ::1 /likeplus/index.php/Home/Manager/chkwarebydate?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+NOTIC: [8] Undefined index: date D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 341 行.
+NOTIC: [8] Undefined index: date D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 343 行.
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `lp_wares` WHERE `flag` = 0  [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dateware D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\7702415482715d3f358b94f3fa606410d4e7927e.file.chkwarebydate.html.php 第 257 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\7702415482715d3f358b94f3fa606410d4e7927e.file.chkwarebydate.html.php 第 257 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.326277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.326321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2018-03-29T11:25:27+08:00 ] ::1 /likeplus/index.php/Home/Manager/myware?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.4662s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-29 00:00:00' AND '2018-03-29 23:59:59'  [ RunTime:0.0721s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2018-03-29T11:25:29+08:00 ] ::1 /likeplus/index.php/Home/Manager/chkwarebydate?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8] Undefined index: date D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 341 行.
+NOTIC: [8] Undefined index: date D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 343 行.
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0395s ]
+SQL: SELECT * FROM `lp_wares` WHERE `flag` = 0  [ RunTime:0.0187s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dateware D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\7702415482715d3f358b94f3fa606410d4e7927e.file.chkwarebydate.html.php 第 257 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\7702415482715d3f358b94f3fa606410d4e7927e.file.chkwarebydate.html.php 第 257 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2018-03-29T11:25:30+08:00 ] ::1 /likeplus/index.php/Home/Manager/myware?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.3903s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-29 00:00:00' AND '2018-03-29 23:59:59'  [ RunTime:0.0265s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 422 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 423 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 431 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\cd34ac251e26664e3f9ddb4ef2299f13f0de64a4.file.myware.html.php 第 432 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2018-03-29T11:25:31+08:00 ] ::1 /likeplus/index.php/Home/Manager/chkwaremore?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 382 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 383 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 386 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 387 行.
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-29 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.0252s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-03-29T11:25:36+08:00 ] ::1 /likeplus/index.php/Home/Manager/chkwaremore?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1&date1=2018-03-29&date2=2018-03-29
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `lp_wares` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `lp_wares` WHERE `date` BETWEEN '2018-03-01 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.0634s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001183s ]
+
+[ 2018-03-29T16:43:48+08:00 ] ::1 /likeplus/index.php/Home/Manager/myorder?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027907s ]
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 758 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 759 行.
+NOTIC: [8] Undefined index: date1 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 762 行.
+NOTIC: [8] Undefined index: date2 D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 763 行.
+SQL: SHOW COLUMNS FROM `lp_order` [ RunTime:0.0183s ]
+SQL: SELECT DISTINCT  myorder.auto_id as auto_id,myorder.time as time,myorder.sn as sn,myware.name as name,myorder.ware_model as model,myorder.count as count,myorder.winfo as winfo,myuser.name as uname,myuser.phone as phone,myuser.province as pro,myuser.city as city,myuser.area as area,myuser.addr as addr,myorder.price as price,mysale.auto_id as sid,mysale.name as sname,mysale.group_name as group_name,myorder.express as express,myorder.flag as flag FROM lp_order myorder,lp_users myuser,lp_wares myware,lp_sales mysale WHERE (  myorder.user_id=myuser.auto_id ) AND (  myorder.ware_id=myware.auto_id ) AND (  myorder.sale_id=mysale.auto_id ) AND myorder.time BETWEEN '2018-03-29 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.0179s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: myorder D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+NOTIC: [8] Trying to get property of non-object D:\amp\Apache24\htdocs\likeplus\Runtime\Cache\238c80b3f80fc9401d56ac7676229ce9fe742468.file.myorder.html.php 第 229 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.279059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.279148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009278s ]
+
+[ 2018-03-29T16:43:54+08:00 ] ::1 /likeplus/index.php/Home/Manager/myorder?token=8d776fc7f34f5a03fcec604daa1cfe07&sale_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `lp_order` [ RunTime:0.0224s ]
+SQL: SELECT DISTINCT  myorder.auto_id as auto_id,myorder.time as time,myorder.sn as sn,myware.name as name,myorder.ware_model as model,myorder.count as count,myorder.winfo as winfo,myuser.name as uname,myuser.phone as phone,myuser.province as pro,myuser.city as city,myuser.area as area,myuser.addr as addr,myorder.price as price,mysale.auto_id as sid,mysale.name as sname,mysale.group_name as group_name,myorder.express as express,myorder.flag as flag FROM lp_order myorder,lp_users myuser,lp_wares myware,lp_sales mysale WHERE (  myorder.user_id=myuser.auto_id ) AND (  myorder.ware_id=myware.auto_id ) AND (  myorder.sale_id=mysale.auto_id ) AND myorder.time BETWEEN '2018-03-01 0:0:0' AND '2018-03-29 23:59:59'  [ RunTime:0.0372s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001940s ]
+
+[ 2018-03-29T16:44:00+08:00 ] ::1 /likeplus/index.php/manager/addexpress?token=8d776fc7f34f5a03fcec604daa1cfe07&order_id=2&sale_id=1&date1=2018-03-01&date2=2018-03-29
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [8] Undefined index: express D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 918 行.
+NOTIC: [8] Undefined index: exid D:\amp\Apache24\htdocs\likeplus\Home\Controller\ManagerController.class.php 第 919 行.
+SQL: SHOW COLUMNS FROM `lp_express` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `lp_express`  [ RunTime:0.0224s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+

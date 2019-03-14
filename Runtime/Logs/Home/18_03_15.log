@@ -1,0 +1,198 @@
+[ 2018-03-15T11:38:45+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_wares ware,lp_users user WHERE ( order.sale_id=$id )' at line 1
+
+[ 2018-03-15T11:40:27+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=$id )' at line 1
+
+[ 2018-03-15T11:40:37+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=1 )' at line 1
+
+[ 2018-03-15T11:40:38+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=1 )' at line 1
+
+[ 2018-03-15T11:40:39+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=1 )' at line 1
+
+[ 2018-03-15T11:42:13+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=1 )' at line 1
+
+[ 2018-03-15T11:42:15+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=1 )' at line 1
+
+[ 2018-03-15T11:42:15+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=1 )' at line 1
+
+[ 2018-03-15T11:42:15+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=1 )' at line 1
+
+[ 2018-03-15T11:42:16+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=1 )' at line 1
+
+[ 2018-03-15T11:42:19+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=1 )' at line 1
+
+[ 2018-03-15T11:42:54+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id=>1 )' at line 1
+
+[ 2018-03-15T11:43:22+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `sale_id` = 1' at line 1
+
+[ 2018-03-15T11:43:36+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order.sn' in 'field list'
+
+[ 2018-03-15T11:46:11+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:01+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:02+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:03+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:03+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:03+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:03+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:04+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:04+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:04+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_user user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:27+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:28+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:28+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:28+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:29+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:47:29+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:03+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:04+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:05+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:05+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:05+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:06+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:06+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:06+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:06+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:07+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:48:08+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:50:34+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:50:35+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:50:35+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:50:35+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:50:36+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:50:36+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 and order.user_id = user.auto_id )' at line 1
+
+[ 2018-03-15T11:54:19+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 )' at line 1
+
+[ 2018-03-15T11:54:23+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_users user WHERE ( order.sale_id = 1 )' at line 1
+
+[ 2018-03-15T11:54:39+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.sale_id = 1 )' at line 1
+
+[ 2018-03-15T11:55:19+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order.flag = 0 )' at line 1
+
+[ 2018-03-15T14:03:13+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$id' in 'where clause'
+
+[ 2018-03-15T14:17:57+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lp_wares WHERE lp_order.sale_id = '1' AND lp_order.ware_id = 'lp_wares.auto_id' ' at line 1
+
+[ 2018-03-15T14:19:38+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'likeplus.lp_order,lp_users,lp_wares' doesn't exist
+
+[ 2018-03-15T14:20:06+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'likeplus.lp_userslp_order' doesn't exist
+
+[ 2018-03-15T14:21:14+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lp_users.name' in 'field list'
+
+[ 2018-03-15T14:22:39+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lp_order.sale_id' in 'where clause'
+
+[ 2018-03-15T14:34:02+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=buyware
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'myorder.model' in 'field list'
+
+[ 2018-03-15T14:34:03+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=buyware
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'myorder.model' in 'field list'
+
+[ 2018-03-15T14:34:04+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=buyware
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'myorder.model' in 'field list'
+
+[ 2018-03-15T14:34:05+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=buyware
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'myorder.model' in 'field list'
+
+[ 2018-03-15T14:34:06+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=buyware
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'myorder.model' in 'field list'
+
+[ 2018-03-15T15:20:40+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=buyware
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'myorder.flag as flag FROM lp_order myorder,lp_users myuser,lp_wares myware WHERE' at line 2
+
+[ 2018-03-15T15:46:59+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-03-15T15:50:54+08:00 ] ::1 /likeplus/index.php/Home/Sale/myorder?token=
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-03-15T17:24:01+08:00 ] ::1 /likeplus/index.php/Home/Sale/myuseradd?ware_id=&token=
+ERR: 模板不存在:D:/amp/Apache24/htdocs/likeplus/Home/View/Sale/myuseradd.html
+

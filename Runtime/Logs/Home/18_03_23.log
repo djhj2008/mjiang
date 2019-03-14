@@ -1,0 +1,6 @@
+[ 2018-03-23T14:43:02+08:00 ] ::1 /likeplus/index.php/Home/Sale/hisorder?token=fc5cde23a6d1fb35cad7ed4f25996561&sale_id=14
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wares.auto_id' in 'field list'
+
+[ 2018-03-23T14:45:33+08:00 ] ::1 /likeplus/index.php/Home/Sale/waretop?token=fc5cde23a6d1fb35cad7ed4f25996561&sale_id=14
+ERR: 模板不存在:D:/amp/Apache24/htdocs/likeplus/Home/View/Sale/waretop.html
+

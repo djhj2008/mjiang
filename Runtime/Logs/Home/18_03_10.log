@@ -1,0 +1,21 @@
+[ 2018-03-10T17:06:54+08:00 ] 192.168.199.249 /likeplus/index.php/Home/Sale/AJS_ROOT_URLjs/main.js
+ERR: 非法操作:AJS_ROOT_URLjs
+
+[ 2018-03-10T17:06:54+08:00 ] 192.168.199.249 /likeplus/index.php/Home/Sale/AJS_ROOT_URLjs/compressed.js
+ERR: 非法操作:AJS_ROOT_URLjs
+
+[ 2018-03-10T17:10:06+08:00 ] 192.168.199.249 /likeplus/index.php/Home/Sale/AJS_ROOT_URLcompressed.js
+ERR: 非法操作:AJS_ROOT_URLcompressed
+
+[ 2018-03-10T17:10:06+08:00 ] 192.168.199.249 /likeplus/index.php/Home/Sale/AJS_ROOT_URLmain.js
+ERR: 非法操作:AJS_ROOT_URLmain
+
+[ 2018-03-10T17:10:23+08:00 ] 192.168.199.249 /likeplus/index.php/Home/Sale/AJS_ROOT_URLcompressed.js
+ERR: 非法操作:AJS_ROOT_URLcompressed
+
+[ 2018-03-10T17:10:23+08:00 ] 192.168.199.249 /likeplus/index.php/Home/Sale/AJS_ROOT_URLmain.js
+ERR: 非法操作:AJS_ROOT_URLmain
+
+[ 2018-03-10T19:36:59+08:00 ] 192.168.199.224 /likeplus/index.php/Home/Sale/todayorder.html
+ERR: 模板不存在:D:/amp/Apache24/htdocs/likeplus/Home/View/Sale/todayorder.html
+
