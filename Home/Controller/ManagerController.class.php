@@ -70,8 +70,8 @@ class ManagerController extends HomeController
 				$workers2 = M('worker')->where(array('psnid'=>$psnid,'type'=>2))->select();
         $this->assign('workers1', $workers1);
         $this->assign('workers2', $workers2);
-        
-
+				$this->assign('name', $name);
+				
         $this->display();
     }
 
@@ -87,6 +87,7 @@ class ManagerController extends HomeController
 				if(empty($workername)){
         		$workertype = M('workertype')->select();
         		$this->assign('workertype', $workertype);
+						$this->assign('name', $name);
 						$this->display();
 						exit;
 				}
@@ -138,7 +139,7 @@ class ManagerController extends HomeController
             $this->assign('type', $type);
             $this->assign('entertype', $entertype);
         }
-
+				$this->assign('name', $name);
         $this->display();
     }
 
