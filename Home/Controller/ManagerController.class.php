@@ -772,6 +772,7 @@ class ManagerController extends HomeController
         
 	      $exitsave['sn']=$sn;
 	      $exitsave['shedid']=$ani['shedid'];
+	      $exitsave['psnid']=$psnid;
        	$exitsave['date']=$date;
        	$exitsave['type']=$type;
        	$exitsave['rcause']=$rcause;
@@ -780,7 +781,7 @@ class ManagerController extends HomeController
         if(!empty($info)){
         	$exitsave['info']=$info;
         }
-        $ret = M('exitmanager')->where(array('sn'=>$sn))->find();
+        $ret = M('exitmanager')->where(array('sn'=>$sn,'psnid'=>$psnid))->find();
         if(empty($ret)){
         	$type = M('exitmanager')->add($exitsave);
         	$anisave = M('animal')->where(array('id'=>$id))->save(array('state'=>1));

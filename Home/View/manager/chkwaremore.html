@@ -137,8 +137,6 @@
                                                     <td>编号</td>
                                                     <td>设备ID(温度查询)</td>
                                                     <td>区域</td>
-                                                    <td>栏号</td>
-                                                    <td>状态</td>
                                                     <th>操作</th>
                                                 </tr>
                                                 </thead>
@@ -161,21 +159,13 @@
                                                     	B
                                                     	<%/if%>
                                                     </td>
-                                                    <td><%$v["fold"]%></td>
-                                                    <td>
-                                                    	<%if $v["state"] eq 0 %>
-                                                    	正常
-                                                    	<%else%>
-                                                    	离场
-                                                    	<%/if%>
-                                                    </td>
                                                     <!--td><img src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$v['pic_url']%>" alt="" height="60"></td-->
                                                     <td>
                                                         <button type="button" id="changeup" onclick="chkwaremore(<%$v['id']%>)"
                                                                 class="btn btn-primary mt-2">
                                                             <span>查看</span> </button>
                                                         <%if $v["state"] eq 0 %>    	
-                                                        <button type="button" id="changeup" onclick="exitwaremore(<%$v['id']%>,<%$v['psnid']%>)"
+                                                        <button type="button" id="changeup" onclick="exitwaremore(<%$v['id']%>)"
                                                                 class="btn btn-primary mt-2">
                                                             <span>离场</span> </button>
                                                         <%/if%> 
