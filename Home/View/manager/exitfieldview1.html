@@ -118,6 +118,88 @@
                     </div>
                     <!-- Sidebar -->
                     <div class="clearfix"></div>
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="#" class="logo">
+                        <span>
+                        <%$name%>
+                        </span>
+                        <i>
+
+                        </i>
+                    </a>
+                </div>
+                <nav class="navbar-custom">
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-light waves-effect">
+                                <i class="dripicons-menu"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+                            <li class="menu-title">牧江科技</li>
+                            <li>
+                                <a href="<%$smarty.const.__CONTROLLER__%>/index">
+                                    <i class="fa fa-desktop"></i> <span> 首页 </span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="<%$smarty.const.__CONTROLLER__%>/search">
+                                    <i class="fa fa-search"></i> <span> 搜索 </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
+                                		<li><a href="<%$smarty.const.__CONTROLLER__%>/addshed">添加牛舍</a></li>
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><i class="fa fa-group"></i> <span> 员工管理 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/chkworker">员工信息</a></li>
+                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addworker">添加员工</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!--li>
+                                <a href="#"><i class="fi-share"></i> <span> 开发中 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level nav" aria-expanded="false">
+                                    <li><a href="javascript: void(0);">开发中 1.1</a></li>
+                                    <li><a href="javascript: void(0);" aria-expanded="false">开发中 1.2 <span class="menu-arrow"></span></a>
+                                        <ul class="nav-third-level nav" aria-expanded="false">
+                                            <li><a href="javascript: void(0);">开发中 2.1</a></li>
+                                            <li><a href="javascript: void(0);">开发中 2.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li-->
+
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
                 </div>
                 <!-- Sidebar -left -->
             </div>

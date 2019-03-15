@@ -21,7 +21,6 @@
 
         <link href="<%$smarty.const.ACSS_URL%>fileinput.css" media="all" rel="stylesheet" type="text/css"/>
         <link href="<%$smarty.const.PUBLIC_ROOT_URL%>themes/explorer-fa/theme.css" media="all" rel="stylesheet" type="text/css"/>
-
     </head>
     <body>
         <!-- Begin page -->
@@ -68,7 +67,7 @@
                             
                             <li>
                                 <a href="<%$smarty.const.__CONTROLLER__%>/search">
-                                    <i class="fa fa-search"></i> <span>搜索</span> </a></li>
+                                    <i class="fa fa-search"></i> <span> 搜索 </span>
                                 </a>
                             </li>
                             <li>
@@ -88,21 +87,6 @@
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/addworker">添加员工</a></li>
                                 </ul>
                             </li>
-
-
-                            <!--li>
-                                <a href="#"><i class="fi-share"></i> <span> 开发中 </span> <span class="menu-arrow"></span></a>
-                                <ul class="nav-second-level nav" aria-expanded="false">
-                                    <li><a href="javascript: void(0);">开发中 1.1</a></li>
-                                    <li><a href="javascript: void(0);" aria-expanded="false">开发中 1.2 <span class="menu-arrow"></span></a>
-                                        <ul class="nav-third-level nav" aria-expanded="false">
-                                            <li><a href="javascript: void(0);">开发中 2.1</a></li>
-                                            <li><a href="javascript: void(0);">开发中 2.2</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li-->
-
                         </ul>
 
                     </div>
@@ -112,7 +96,6 @@
                 <!-- Sidebar -left -->
             </div>
             <!-- Left Sidebar End -->
-
             <!-- ============================================================== -->
             <!-- Start right Content here -->
             <!-- ============================================================== -->
@@ -163,14 +146,14 @@
             <!-- ============================================================== -->
         </div>
         <footer class="footer text-right">
-            Copyright &copy; 2019.牧江科技
+            2019 - 2020 © 牧江科技. - MJiang.com
         </footer>
         <!-- END wrapper -->
     </body>
 
 
     <!-- jQuery  -->
-    <!--script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.min.js"></script-->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.min.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/popper.min.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/bootstrap.min.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/metisMenu.min.js"></script>
@@ -183,32 +166,4 @@
     <!-- App js -->
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.core.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.app.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $("#file1").fileinput({
-                language: 'zh',
-                'theme': 'explorer-fa',
-                uploadUrl: "<%$smarty.const.__CONTROLLER__%>/upload2?token=<%$token%>&userid=<%$id%>",// 上传路径
-                uploadAsync: false,//是否异步传输
-                maxFileCount: 1,//最大文件上传数量
-                'allowedFileExtensions': ['jpg', 'png', 'gif'],
-
-            }).on('filebatchpreupload', function(event, data, id, index) {
-
-
-            }).on('filebatchuploadsuccess', function(event, data) {//上传成功从服务器端返回的数据（即保存的文件名称）
-                var pic_url = document.getElementById("pic_url");
-                var path =data.response[0].flag;
-                pic_url.value = path;
-                //alert(path);
-            });
-            
-            /*
-             $("#test-upload").on('fileloaded', function(event, file, previewId, index) {
-             alert('i = ' + index + ', id = ' + previewId + ', file = ' + file.name);
-             });
-             */
-        });
-    </script>
 </html>

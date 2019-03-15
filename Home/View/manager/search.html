@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>爱加HOME</title>
+        <title>搜索</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -73,7 +73,7 @@
                             
                             <li>
                                 <a href="<%$smarty.const.__CONTROLLER__%>/search">
-                                    <i class="fa fa-search"></i> <span>搜索</span> </a></li>
+                                    <i class="fa fa-search"></i> <span> 搜索 </span>
                                 </a>
                             </li>
                             <li>
@@ -159,7 +159,7 @@
                                                     <td><%$v["sn"]%></td>
                                                     <td>
                                                     	<%if $v["devid"] gt 0 %>
-                                                    	<%$v["devid"]%>
+                                                    	<a href="<%$smarty.const.__CONTROLLER__%>/todayValue?devid=<%$v["devid"]%>&psnid=<%$v["psnid"]%>"><%$v["devid"]%></a>
                                                     	<%else%>
                                                     	空
                                                     	<%/if%>
@@ -200,9 +200,9 @@
                     <!-- end row -->
                     </div>
                 </div> <!-- content -->
-                <footer class="footer text-right">
-                    2017 - 2018 © Abstack. - Coderthemes.com
-                </footer>
+        <footer class="footer text-right">
+            2019 - 2020 © 牧江科技. - MJiang.com
+        </footer>
             </div>
             <!-- ============================================================== -->
             <!-- End Right content here -->
