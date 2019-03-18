@@ -126,8 +126,8 @@
         
 <script>
     $(document).ready(function(){
-        var strName = localStorage.getItem('keyName');
-        var strPass = localStorage.getItem('keyPass');
+        var strName = localStorage.getItem('mjkeyName');
+        var strPass = localStorage.getItem('mjkeyPass');
         //alert(strName);
         if(strName){
             $('#name').val(strName);
@@ -169,12 +169,12 @@
             return(false);
         }
 
-        localStorage.setItem('keyName',strName);
+        localStorage.setItem('mjkeyName',strName);
         
         if($('#remember').is(':checked')){
-            localStorage.setItem('keyPass',strPass);
+            localStorage.setItem('mjkeyPass',strPass);
         }else{
-            localStorage.removeItem('keyPass');
+            localStorage.removeItem('mjkeyPass');
         }
         return(true);
     }
