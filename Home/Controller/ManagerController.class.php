@@ -60,9 +60,11 @@ class ManagerController extends HomeController
 						$fieldfind = M('field')->where(array('psnid'=>$psnid,'shedid'=>$shed))->find();
 						if(empty($fieldfind)){
 							$savefield = M('field')->add($filed);
+						}else{
+							
 						}
 
-						$this->display();
+						$this->redirect('manager/chkshed', NULL, 0, '');
 						exit;
 				}
 			
@@ -760,7 +762,7 @@ class ManagerController extends HomeController
         
         if(empty($sn)){
 		        $type = M('exittype')->order('id asc')->select();
-		        $workers1 = M('worker')->where(array('psnid'=>$psnid,'type'=>4))->order('id asc')->select();
+		        $workers1 = M('worker')->where(array('psnid'=>$psnid,'type'=>3))->order('id asc')->select();
 		    	
 		    		$this->assign('name', $name);
 		    		$this->assign('worker', $workers1);
