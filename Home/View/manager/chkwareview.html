@@ -313,11 +313,10 @@
             $("#file1").fileinput({
                 language: 'zh',
                 'theme': 'explorer-fa',
-                uploadUrl: "<%$smarty.const.__CONTROLLER__%>/upload2?token=<%$token%>&userid=<%$id%>",// 上传路径
+                uploadUrl: "<%$smarty.const.__CONTROLLER__%>/upload2",// 上传路径
                 uploadAsync: false,//是否异步传输
                 maxFileCount: 1,//最大文件上传数量
-                'allowedFileExtensions': ['jpg', 'png', 'gif'],
-
+                'allowedFileExtensions': ['jpg', 'png','jpeg', 'gif'],
             }).on('filebatchpreupload', function(event, data, id, index) {
 
 
@@ -325,8 +324,12 @@
                 var pic_url = document.getElementById("pic_url");
                 //var pic_url2 = document.getElementById("pic_url2");
                 var path =data.response[0].flag;
-                pic_url.value = path;
-                document.getElementById("photo").src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/"+path;
+                if(path=="no"){
+                	alert("上传失败.");
+                }else{
+	                pic_url.value = path;
+	                document.getElementById("photo").src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/"+path;
+                }
                 //pic_url2.value = "上传成功.";
                 //alert(path);
             });

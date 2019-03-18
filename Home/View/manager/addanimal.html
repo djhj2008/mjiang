@@ -312,22 +312,25 @@
 
     <script>
         $(document).ready(function () {
+        		var strsn;
             $("#file1").fileinput({
                 language: 'zh',
                 'theme': 'explorer-fa',
-                uploadUrl: "<%$smarty.const.__CONTROLLER__%>/upload2",// 上传路径
+                uploadUrl: "<%$smarty.const.__CONTROLLER__%>/upload2?",// 上传路径
                 uploadAsync: false,//是否异步传输
                 maxFileCount: 1,//最大文件上传数量
                 'allowedFileExtensions': ['jpg', 'png','jpeg', 'gif'],
 
             }).on('filebatchpreupload', function(event, data, id, index) {
 
-
             }).on('filebatchuploadsuccess', function(event, data) {//上传成功从服务器端返回的数据（即保存的文件名称）
                 var pic_url = document.getElementById("pic_url");
                 //var pic_url2 = document.getElementById("pic_url2");
                 var path =data.response[0].flag;
                 pic_url.value = path;
+                if(path=="no"){
+                	alert("上传失败.");
+                }
                 //pic_url2.value = "上传成功.";
                 //alert(path);
             });

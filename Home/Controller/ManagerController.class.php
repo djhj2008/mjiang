@@ -148,7 +148,6 @@ class ManagerController extends HomeController
 
     public function upload()
     {
-        $id=$_GET['userid'];
     		$name=$_SESSION['name'];
         $psnid=$_SESSION['psnid'];
 				
@@ -290,19 +289,19 @@ class ManagerController extends HomeController
 
     public function upload2()
     {
-        $id=$_GET['userid'];
-        $sn = $_POST['sn'];
+    		$name=$_SESSION['name'];
+        $psnid=$_SESSION['psnid'];
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize = 31457280;// 设置附件上传大小
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg', 'pdf');// 设置附件上传类型
         $upload->rootPath = 'Home/Public/uploads/'; // 设置附件上传根目录
-        $upload->savePath = $sn . '/'; // 设置附件上传（子）目录ch
+        $upload->savePath = $psnid . '/'; // 设置附件上传（子）目录ch
         // 上传文件
         $info = $upload->upload();
-
         $i=0;
         if(!$info) {// 上传错误提示错误信息
             $a[$i]['flag']="no";
+            $a[$i]['err']=$upload->getError();
             $this->ajaxReturn($a,'JSON');
         }else{// 上传成功 获取上传文件信息
             foreach($info as $file){
