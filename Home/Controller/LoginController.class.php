@@ -14,8 +14,8 @@ class LoginController extends HomeController {
 			$nameFind=M('user')->where(array('name'=>$name))->find();
 			if($nameFind==NULL){
 					$this->assign('ret',"10000101");
-          //$this->display();
-          dump("user not find");
+          $this->display();
+          //dump("user not find");
           exit;
 			}
       $nameArr=array(
@@ -34,8 +34,8 @@ class LoginController extends HomeController {
           
 			}else{
 				$this->assign('ret',"10000102");
-				dump("password error");
-				//$this->display();
+				//dump("password error");
+				$this->display();
 				exit;
 			}
 
