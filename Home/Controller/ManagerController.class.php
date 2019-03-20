@@ -110,7 +110,8 @@ class ManagerController extends HomeController
 
 
         $type = M('anltype')->select();
-				$kind = M('anlkind')->select();
+				$kind1 = M('anlkind')->where(array('subtype'=>1))->select();
+				$kind2 = M('anlkind')->where(array('subtype'=>2))->select();
 				$entertype = M('entertype')->select();
 				$field = M('field')->where(array('psnid'=>$psnid))->select();
 				
@@ -137,7 +138,8 @@ class ManagerController extends HomeController
         if(empty($type)){
 
         }else{
-            $this->assign('kind', $kind);
+            $this->assign('kind1', $kind1);
+            $this->assign('kind2', $kind2);
             $this->assign('type', $type);
             $this->assign('entertype', $entertype);
         }
@@ -155,9 +157,13 @@ class ManagerController extends HomeController
         $id = $_POST['id'];
 
         $sex = $_POST['sex'];
-        $kind = $_POST['kind'];
         $type = $_POST['type'];
-        
+        if($type==1){
+        	$kind = $_POST['kind1'];
+      	}else{
+      		$kind = $_POST['kind2'];
+      	}
+      	
         $shedid = $_POST['shedid'];
         $area = $_POST['area'];
         $fold = $_POST['fold'];
@@ -387,14 +393,22 @@ class ManagerController extends HomeController
 					}
 				}
 				
-				$kind = M('anlkind')->select();
-        $kindsize=count($kind);
-				for($i=0;$i< $kindsize;$i++){					
-					if($kind[$i]['id']==$ani['kind']){
-						$this->assign('kindindex', $i);
+				$kind1 = M('anlkind')->where(array('subtype'=>1))->select();
+        $kind1size=count($kind1);
+				for($i=0;$i< $kind1size;$i++){					
+					if($kind1[$i]['id']==$ani['kind']){
+						$this->assign('kind1index', $i);
 					}
 				}
 				
+				$kind2 = M('anlkind')->where(array('subtype'=>2))->select();
+        $kind2size=count($kind2);
+				for($i=0;$i< $kind2size;$i++){					
+					if($kind2[$i]['id']==$ani['kind']){
+						$this->assign('kind2index', $i);
+					}
+				}
+
 				$entertype = M('entertype')->select();
         $entertypesize=count($entertype);
 				for($i=0;$i< $entertypesize;$i++){					

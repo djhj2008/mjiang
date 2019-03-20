@@ -153,20 +153,29 @@
                                         </div>
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                <label for="kind" class="col-form-label">品种</label>
-						                                    <select name="kind" id="kind" class="form-control" data-style="btn-light">
-						                                        <%foreach $kind as $v%>
+                                                <label for="type" class="col-form-label">类型</label>
+						                                    <select name="type" id="type" class="form-control" data-style="btn-light" onchange="kindChange(selectedIndex);">
+						                                        <%foreach $type as $v%>
 						                                            <option value ="<%$v['id']%>"><%$v['name']%></option>
 						                                        <%/foreach%>
 						                                    </select>
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <label for="type" class="col-form-label">类型</label></label>
-						                                    <select name="type" id="type" class="form-control" data-style="btn-light">
-						                                        <%foreach $type as $v%>
+                                                <label for="kind" class="col-form-label">品种</label>
+                                                <div id="kind1" style="">
+						                                    <select name="kind1" id="kind1" class="form-control" data-style="btn-light" >
+						                                        <%foreach $kind1 as $v%>
 						                                            <option value ="<%$v['id']%>"><%$v['name']%></option>
 						                                        <%/foreach%>
 						                                    </select>
+						                                    </div>
+						                                    <div id="kind2" style="display:none">
+						                                    <select name="kind2" id="kind2" class="form-control" data-style="btn-light" >
+						                                        <%foreach $kind2 as $v%>
+						                                            <option value ="<%$v['id']%>"><%$v['name']%></option>
+						                                        <%/foreach%>
+						                                    </select>
+						                                    </div>
                                             </div>
                                         </div>
                                         <div class="form-row">
@@ -357,8 +366,17 @@
      				
      				var typeid = <%$typeindex%>;
      				document.getElementById('type')[typeid].selected=true;
-     				var kindid = <%$kindindex%>;
-     				document.getElementById('kind')[kindid].selected=true;
+         		if(typeid==0){
+         			document.getElementById("kind1").style.display="";
+         			document.getElementById("kind2").style.display="none";
+	     				var kindid = <%$kind1index%>;
+	     				document.getElementById('kind1')[kindid].selected=true;
+         		}else{
+         			document.getElementById("kind1").style.display="none";
+         			document.getElementById("kind2").style.display="";
+	     				var kindid = <%$kind2index%>;
+	     				document.getElementById('kind2')[kindid].selected=true;
+         		}
      				var entertypeid = <%$entertypeindex%>;
      				document.getElementById('entertype')[entertypeid].selected=true;
      				var sexid = <%$ani['sex']%>-1;
@@ -382,6 +400,17 @@
      				var workername2=name2[values];
      				document.getElementById("worker1").value=workername1;
      				document.getElementById("worker2").value=workername2;
+     				//alert(values);
+     		};
+     		
+				function kindChange(index){
+         		if(index==0){
+         			document.getElementById("kind1").style.display="";
+         			document.getElementById("kind2").style.display="none";
+         		}else{
+         			document.getElementById("kind1").style.display="none";
+         			document.getElementById("kind2").style.display="";
+         		}
      				//alert(values);
      		};
      		
