@@ -85,7 +85,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                 	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
-                                		<li><a href="<%$smarty.const.__CONTROLLER__%>/addshed">添加牛舍</a></li>
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
                                 </ul>
@@ -95,7 +94,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-group"></i> <span> 员工管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/chkworker">员工信息</a></li>
-                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addworker">添加员工</a></li>
                                 </ul>
                             </li>
 
@@ -138,15 +136,23 @@
                                     <div class="col-md-6">
                                     <form action="<%$smarty.const.__CONTROLLER__%>/chkshededit?id=<%$field['id']%>" enctype="multipart/form-data" method="post">
                                         <div class="form-row">
-                                            <div class="form-group col-md-4">
+                                            <div class="form-group col-md-3">
                                                 <label for="inputCity" class="col-form-label">舍号</label>
                                                 <input type="text" class="form-control" id="shed" name="shed" value="<%$field['shedid']%>" readonly="readonly">
                                             </div>
-                                            <div class="form-group col-md-4">
+                                          <div class="form-group col-md-3">
+                                                <label for="type" class="col-form-label">类型</label>
+						                                    <select name="type" id="type" class="form-control" data-style="btn-light">
+						                                        <%foreach $type as $v%>
+						                                            <option value ="<%$v['type']%>"><%$v['name']%> </option>
+						                                        <%/foreach%>
+						                                    </select>
+                                            </div>
+                                            <div class="form-group col-md-3">
                                                 <label for="inputZip" class="col-form-label">区域数量</label>
                                                 <input type="text" class="form-control" id="area" name="area" value="<%$field['areas']%>">
                                             </div>
-                                            <div class="form-group col-md-4">
+                                            <div class="form-group col-md-3">
                                                 <label for="inputZip" class="col-form-label">栏位数量</label>
                                                 <input type="text" class="form-control" id="fold" name="fold" value="<%$field['folds']%>">
                                             </div>
@@ -239,6 +245,10 @@
      				document.getElementById('worker1')[index1].selected=true;
             var index2 = <%$workerindex2%>;
      				document.getElementById('worker2')[index2].selected=true;
+     				
+     				var typeindex= <%$field['type']%>;
+     				document.getElementById('type')[typeindex].selected=true;
+     				
         });
     </script>
 </html>

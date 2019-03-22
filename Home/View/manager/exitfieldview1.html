@@ -85,7 +85,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                 	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
-                                		<li><a href="<%$smarty.const.__CONTROLLER__%>/addshed">添加牛舍</a></li>
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
                                 </ul>
@@ -95,7 +94,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-group"></i> <span> 员工管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/chkworker">员工信息</a></li>
-                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addworker">添加员工</a></li>
                                 </ul>
                             </li>
 
@@ -148,13 +146,17 @@
                                             </div>
                                         </div>
                                         <div class="form-row">
-                                       			<div class="form-group col-md-6">
+                                       			<div class="form-group col-md-4">
 	                                            	<label for="date" class="col-form-label">离场日期</label>
 	                                           	 	<input required class="form-control" type="date" id="date" name="date">
                                             </div>
-                                            <div class="form-group col-md-6">
+                                            <div class="form-group col-md-4">
+                                                <label for="weight" class="col-form-label">重量(斤)</label>
+                                                <input required type="text" class="form-control" id="weight" name="weight" value="<%$ani['weight']%>">
+                                            </div>
+                                            <div class="form-group col-md-4">
                                                 <label for="type" class="col-form-label">类型</label>
-						                                    <select name="type" id="type" class="form-control" data-style="btn-light">
+						                                    <select required name="type" id="type" class="form-control" data-style="btn-light">
 						                                        <%foreach $type as $v%>
 						                                            <option value ="<%$v['id']%>"><%$v['name']%></option>
 						                                        <%/foreach%>

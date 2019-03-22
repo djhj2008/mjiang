@@ -9,6 +9,8 @@ class ManagerController extends HomeController
     {
         $psnid=$_SESSION['psnid'];
     		$name=$_SESSION['name'];
+    		
+				$type = M('purptype')->select();
 
 				$field = M('field')->where(array('psnid'=>$psnid))->order('shedid asc')->select();
 				$fieldsize=count($field);
@@ -24,6 +26,9 @@ class ManagerController extends HomeController
 					$field[$i]['workername1']=$worker1['name'];
 					$field[$i]['workername2']=$worker2['name'];
 					$field[$i]['workername3']=$worker3['name'];
+					$typeid=$field[$i]['type'];
+					$field[$i]['typename']=$type[$typeid]['name'];
+					
 					$shedid = $field[$i]['shedid'];
 					$anicount = M('animal')->where(array('psnid'=>$psnid,'shedid'=>$shedid,'state'=>0))->count();
 					$field[$i]['count']=$anicount;
@@ -399,6 +404,7 @@ class ManagerController extends HomeController
 				
 				$kind1 = M('anlkind')->where(array('subtype'=>1))->select();
         $kind1size=count($kind1);
+        $this->assign('kind1index', 0);
 				for($i=0;$i< $kind1size;$i++){					
 					if($kind1[$i]['id']==$ani['kind']){
 						$this->assign('kind1index', $i);
@@ -407,6 +413,7 @@ class ManagerController extends HomeController
 				
 				$kind2 = M('anlkind')->where(array('subtype'=>2))->select();
         $kind2size=count($kind2);
+        $this->assign('kind2index', 0);
 				for($i=0;$i< $kind2size;$i++){					
 					if($kind2[$i]['id']==$ani['kind']){
 						$this->assign('kind2index', $i);
@@ -448,7 +455,8 @@ class ManagerController extends HomeController
         if(empty($type)){
 
         }else{
-            $this->assign('kind', $kind);
+            $this->assign('kind1', $kind1);
+            $this->assign('kind2', $kind2);
             $this->assign('type', $type);
             $this->assign('entertype', $entertype);
         }
@@ -468,9 +476,14 @@ class ManagerController extends HomeController
         $devid = $_POST['devid'];
 
         $sex = $_POST['sex'];
-        $kind = $_POST['kind'];
         $type = $_POST['type'];
         
+        if($type==1){
+        	$kind = $_POST['kind1'];
+        }else{
+        	$kind = $_POST['kind2'];
+        }
+
         $shedid = $_POST['shedid'];
         $area = $_POST['area'];
         $fold = $_POST['fold'];
@@ -564,7 +577,7 @@ class ManagerController extends HomeController
 					$anisave['info']=$finfo;
 				}
 
-				if(!empty($ani)){
+				if(!empty($anisave)){
         	$ani = D('animal')->where(array('id' => $ani_id))->save($anisave);
         	$this->redirect('manager/chkwareview', array('id'=>$ani_id), 0, '');
       	}
@@ -630,6 +643,7 @@ class ManagerController extends HomeController
         $psnid=$_SESSION['psnid'];
     		$name=$_SESSION['name'];
 
+				$type = M('purptype')->select();
 				$field = M('field')->where(array('psnid'=>$psnid))->order('shedid asc')->select();
 				$fieldsize=count($field);
 				for($i=0;$i< $fieldsize;$i++){
@@ -647,6 +661,8 @@ class ManagerController extends HomeController
 					$shedid = $field[$i]['shedid'];
 					$anicount = M('animal')->where(array('psnid'=>$psnid,'shedid'=>$shedid,'state'=>0))->count();
 					$field[$i]['count']=$anicount;
+					$typeid=$field[$i]['type'];
+					$field[$i]['typename']=$type[$typeid]['name'];
 					//dump($field);
 				}
 				$this->assign('name', $name);
@@ -666,11 +682,12 @@ class ManagerController extends HomeController
 				$folds=$_POST['fold'];
 				$workerid1=$_POST['worker1'];
 				$workerid2=$_POST['worker2'];
+				$typeid=$_POST['type'];
 
         $user = M('field');
         $field = $user->where(array('id'=>$id))->find();
         //var_dump($user->getLastSql());
-        
+        $type = M('purptype')->select();
         if(empty($shedid)){
 
 	        $workers1 = M('worker')->where(array('psnid'=>$psnid,'type'=>1))->order('id asc')->select();
@@ -687,6 +704,7 @@ class ManagerController extends HomeController
 							break;
 						}
 					}
+					$this->assign('type', $type);
 					$this->assign('workerindex1', $workerindex1);
 					$this->assign('workerindex2', $workerindex2);
 	        $this->assign('workers1', $workers1);
@@ -713,7 +731,9 @@ class ManagerController extends HomeController
         if($workerid2!=$field['workerid2']){
         	$fieldsave['workerid2']=$workerid2;
         }
-  		  
+        if($typeid!=$field['type']){
+        	$fieldsave['type']=$typeid;
+        }
         if(!empty($fieldsave)){
         	$ret = D('field')->where(array('id' => $id))->save($fieldsave);
         }
@@ -775,6 +795,7 @@ class ManagerController extends HomeController
         $rcause=$_POST['rcause'];
         $direction=$_POST['direction'];
         $workerid=$_POST['workerid'];
+        $weight=$_POST['weight'];
         $info=$_POST['info'];
         
         if(empty($sn)){
@@ -796,6 +817,7 @@ class ManagerController extends HomeController
        	$exitsave['type']=$type;
        	$exitsave['rcause']=$rcause;
        	$exitsave['direction']=$direction;
+       	$exitsave['weight']=$weight;
         $exitsave['workerid']=$workerid;
         if(!empty($info)){
         	$exitsave['info']=$info;

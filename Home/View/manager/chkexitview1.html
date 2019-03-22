@@ -80,7 +80,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                 	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
-                                		<li><a href="<%$smarty.const.__CONTROLLER__%>/addshed">添加牛舍</a></li>
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
                                 </ul>
@@ -90,7 +89,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-group"></i> <span> 员工管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/chkworker">员工信息</a></li>
-                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addworker">添加员工</a></li>
                                 </ul>
                             </li>
 
@@ -137,6 +135,7 @@
                                                     <td>编号</td>
                                                     <td>舍号</td>
                                                     <td>日期</td>
+                                                    <td>重量(斤)</td>
                                                     <td>类型</td>
                                                     <td>主要原因</td>
                                                     <th>方向</th>
@@ -151,11 +150,12 @@
                                                     <td><%$v["sn"]%></td>
                                                     <td><%$v["shedid"]%></td>
                                                     <td><%$v["date"]%></td>
+                                                    <td><%$v["weight"]%></td>
                                                     <td><%$v["typename"]%></td>
-                                                   <td><%$v["rcause"]%></td>
-                                                   <td><%$v["direction"]%></td>
-                                                   <td><%$v["workername"]%></td>
-                                                   <td><%$v["info"]%></td>
+                                                   	<td><%$v["rcause"]%></td>
+                                                   	<td><%$v["direction"]%></td>
+                                                   	<td><%$v["workername"]%></td>
+                                                   	<td><%$v["info"]%></td>
                                                     <!--td><img src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$v['pic_url']%>" alt="" height="60"></td-->
                                                     <td>
                                                         <button type="button" id="changeup" onclick="chkwaremore(<%$v['sn']%>)"

@@ -80,7 +80,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                 	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
-                                		<li><a href="<%$smarty.const.__CONTROLLER__%>/addshed">添加牛舍</a></li>
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
                                 </ul>
@@ -90,7 +89,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-group"></i> <span> 员工管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/chkworker">员工信息</a></li>
-                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addworker">添加员工</a></li>
                                 </ul>
                             </li>
 
@@ -158,8 +156,8 @@
                                         <div class="inner-box card-box">
                                             <!--div class="ribbon-pricing"><span>POPULAR</span></div-->
                                             <div class="plan-header text-center">
-                                                <h3 class="plan-title">舍号:</h3>
-                                                <h2 class="plan-price"><%$v['shedid']%></h2>
+                                                <h2 class="plan-title">舍号:<%$v['shedid']%></h2>
+                                                <h2 class="plan-price"><%$v['typename']%></h2>
                                                 <div class="plan-duration">牛只数量:<%$v['count']%></div>
                                             </div>
                                             <ul class="plan-stats list-unstyled text-center">
