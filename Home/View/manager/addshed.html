@@ -128,17 +128,25 @@
                                     <div class="col-md-6">
                                     <form action="<%$smarty.const.__CONTROLLER__%>/addshed?token=<%$token%>&userid=<%$id%>" enctype="multipart/form-data" method="post">
                                         <div class="form-row">
-                                            <div class="form-group col-md-4">
+                                            <div class="form-group col-md-3">
                                                 <label for="inputCity" class="col-form-label">舍号 </label>
-                                                <input required type="text" class="form-control" id="shed" name="shed">
+                                                <input required type="number" class="form-control" id="shed" name="shed">
                                             </div>
-                                            <div class="form-group col-md-4">
-                                                <label for="inputZip" class="col-form-label">区域数量 </label>
-                                                <input required type="text" class="form-control" id="area" name="area">
+                                          <div class="form-group col-md-3">
+                                                <label for="kind" class="col-form-label">类型</label>
+						                                    <select name="type" id="type" class="form-control" data-style="btn-light">
+						                                        <%foreach $type as $v%>
+						                                            <option value ="<%$v['type']%>"><%$v['name']%> </option>
+						                                        <%/foreach%>
+						                                    </select>
                                             </div>
-                                            <div class="form-group col-md-4">
+                                            <div class="form-group col-md-3">
+                                                <label for="inputZip" class="col-form-label">区域数量(1-10) </label>
+                                                <input required type="number" class="form-control" id="area" name="area" oninput="if(value>10)value=10">
+                                            </div>
+                                            <div class="form-group col-md-3">
                                                 <label for="inputZip" class="col-form-label">栏位数量 </label>
-                                                <input required type="text" class="form-control" id="fold" name="fold">
+                                                <input required type="number" class="form-control" id="fold" name="fold" oninput="if(value>100)value=100">
                                             </div>
                                         </div>
                                         <div class="form-row">

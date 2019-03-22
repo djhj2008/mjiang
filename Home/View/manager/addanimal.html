@@ -190,8 +190,6 @@
                                             <div class="form-group col-md-4">
                                                 <label for="inputState" class="col-form-label">区域</label>
 						                                    <select name="area" id="area" class="form-control" data-style="btn-light">
-						                                    	<option value ="1">A</option>
-						                                      <option value ="2">B</option> 
 						                                    </select>
                                             </div>
                                             <div class="form-group col-md-4">
@@ -202,11 +200,11 @@
                                         <div class="form-row">
                                        			<div class="form-group col-md-6">
 	                                            	<label for="inputZip" class="col-form-label">饲养员</label>
-	                                           		<input name="worker1" id="worker1" type="text" class="form-control" readonly="readonly">
+	                                           		<input required name="worker1" id="worker1" type="text" class="form-control" readonly="readonly">
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label for="inputZip" class="col-form-label">责任兽医</label>
-                                                <input name="worker2" id="worker2" type="text" class="form-control" /readonly="readonly">
+                                                <input required name="worker2" id="worker2" type="text" class="form-control" /readonly="readonly">
                                             </div>
                                        	</div>
                                         <div class="form-row">
@@ -351,10 +349,12 @@
              */
          		var name1 = new Array();
          		var name2 = new Array();
+         		var area = new Array();
          		var count=0;
          		<%foreach $field as $v%>
          			name1[count]="<%$v['workername1']%>";
          			name2[count]="<%$v['workername2']%>";
+         			area[count]="<%$v['areas']%>";
          			count++;
          		<%/foreach%>
          		var shedid= document.getElementById("shedid").selectedIndex;
@@ -365,7 +365,18 @@
 	     				document.getElementById("worker1").value=workername1;
 	     				document.getElementById("worker2").value=workername2;
      				}
-     										//下拉框选择改变事件
+     				
+     				
+						var chArr = new Array('A','B','C','D','E','F','G','H','I','J');
+     				var area_size=area[shedid];
+     				var i=0;
+     				for(i=0;i<area_size;i++){
+     					var value=i;
+     					var text=chArr[i];
+     					$("#area").append("<option value='"+value+"'>"+text+"</option>");
+     				}
+
+     				//下拉框选择改变事件
          		//alert(workername1);
         });
         
@@ -376,6 +387,7 @@
          		<%foreach $field as $v%>
          			name1[count]="<%$v['workername1']%>";
          			name2[count]="<%$v['workername2']%>";
+         			area[count]="<%$v['areas']%>";
          			count++;
          		<%/foreach%>
      				var workername1=name1[values];
@@ -383,6 +395,14 @@
      				document.getElementById("worker1").value=workername1;
      				document.getElementById("worker2").value=workername2;
      				//alert(values);
+     				var chArr = new Array('A','B','C','D','E','F','G','H','I','J');
+     				var area_size=area[shedid];
+     				var i=0;
+     				for(i=0;i<area_size;i++){
+     					var value = i;
+     					var text=chArr[i];
+     					$("#area").append("<option value='"+value+"'>"+text+"</option>");
+     				}
      		};
 
 				function kindChange(index){

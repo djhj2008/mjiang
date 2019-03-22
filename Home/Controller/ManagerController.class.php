@@ -43,6 +43,7 @@ class ManagerController extends HomeController
 				$shed=$_POST['shed'];
 				$area=$_POST['area'];
 				$fold=$_POST['fold'];
+				$type=$_POST['type'];
 				
 				$worker1=$_POST['worker1'];
 				$worker2=$_POST['worker2'];
@@ -53,6 +54,7 @@ class ManagerController extends HomeController
 										'shedid'=>$shed,
 										'areas'=>$area,
 										'folds'=>$fold,
+										'type'=>$type,
 										'workerid1'=>$worker1,
 										'workerid2'=>$worker2,
 										'psnid'=>$psnid,
@@ -68,11 +70,13 @@ class ManagerController extends HomeController
 						exit;
 				}
 			
+				$type = M('purptype')->select();
         $workers1 = M('worker')->where(array('psnid'=>$psnid,'type'=>1))->select();
 				$workers2 = M('worker')->where(array('psnid'=>$psnid,'type'=>2))->select();
         $this->assign('workers1', $workers1);
         $this->assign('workers2', $workers2);
 				$this->assign('name', $name);
+				$this->assign('type', $type);
 				
         $this->display();
     }
