@@ -159,6 +159,7 @@ class ManagerController extends HomeController
 
     public function upload()
     {
+    	
     		$name=$_SESSION['name'];
         $psnid=$_SESSION['psnid'];
 				
@@ -280,12 +281,10 @@ class ManagerController extends HomeController
 				$ware['kind']=$kindfind['name'];
         $typefind = M('anltype')->where(array('type'=>$type))->find();
 				$ware['type']=$typefind['name'];
-					
-				if($area==1){
-					$ware['area']="A";
-				}else{
-					$ware['area']="B";
-				}
+
+				$name = array('A','B','C','D','E','F','G','H','I','J');
+				$ware['area']=$name[$area-1];
+		
 				if(!empty($fold)){
 					$ware['fold']=$fold;
 				}
@@ -358,10 +357,15 @@ class ManagerController extends HomeController
     		$shedid=$_GET['shedid'];
     		$name=$_SESSION['name'];
         $psnid=$_SESSION['psnid'];
+        $name = array('A','B','C','D','E','F','G','H','I','J');
         
         $user = M('animal');
         $wares = $user->where(array('psnid'=>$psnid,'shedid'=>$shedid,'state'=>0))->order('id asc')->select();
         //var_dump($user->getLastSql());
+				for($i=0;$i<count($wares);$i++){
+					$index=$wares[$i]['area']-1;
+					$wares[$i]['areaname']=$name[$index];
+				}
 
 				$this->assign('name', $name);
 				$this->assign('shedid', $shedid);
@@ -378,10 +382,10 @@ class ManagerController extends HomeController
         if(empty($id)){
         	$sn=$_GET['sn'];
 	        $user = M('animal');
-	        $ani = $user->where(array('sn'=>$sn))->order('id asc')->find();
+	        $ani = $user->where(array('sn'=>$sn))->find();
         }else{
 	        $user = M('animal');
-	        $ani = $user->where(array('id'=>$id))->order('id asc')->find();
+	        $ani = $user->where(array('id'=>$id))->find();
         }
         //var_dump($user->getLastSql());
 
@@ -465,6 +469,24 @@ class ManagerController extends HomeController
 				$this->assign('shedid', $shedid);
         $this->assign('wares', $wares);
         $this->display();
+    }
+    
+    public function delanibyid()
+    {
+    		$name=$_SESSION['name'];
+        $psnid=$_SESSION['psnid'];
+        $id=$_GET['id'];
+        
+        if(empty($id)){
+        	//
+        }else{
+	        $user = M('animal');
+	        $ani = $user->where(array('id'=>$id))->find();
+        }
+        $shedid=$ani['shedid'];
+        $ret=$user->where(array('id'=>$id))->delete();
+        $this->redirect('manager/chkwaremore', array('shedid'=>$shedid), 0, '');
+        
     }
     
     public function chkwareedit()

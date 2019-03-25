@@ -24,7 +24,8 @@
         <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/style.css" rel="stylesheet" type="text/css" />
 
         <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/modernizr.min.js"></script>
-
+        <!-- Sweet Alert css -->
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/sweet-alert/sweetalert2.min.css" rel="stylesheet" type="text/css" />
     </head>
 
 
@@ -151,11 +152,7 @@
                                                     	<%/if%>
                                                     </td>
                                                     <td>
-                                                    	<%if $v["area"] eq 1 %>
-                                                    	A
-                                                    	<%else%>
-                                                    	B
-                                                    	<%/if%>
+                                                    	<%$v["areaname"]%>
                                                     </td>
                                                     <!--td><img src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$v['pic_url']%>" alt="" height="60"></td-->
                                                     <td>
@@ -166,7 +163,8 @@
                                                         <button type="button" id="changeup" onclick="exitwaremore(<%$v['id']%>)"
                                                                 class="btn btn-primary mt-2">
                                                             <span>离场</span> </button>
-                                                        <%/if%> 
+                                                        <%/if%>
+                                                        <button type="button" class="btn btn-danger mt-2" onclick="delwaremore(<%$v['id']%>)">删除</button>
                                                     </td>
                                                 </tr>
                                                 <%/foreach%>
@@ -212,7 +210,9 @@
     <!-- Responsive examples -->
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/datatables/dataTables.responsive.min.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/datatables/responsive.bootstrap4.min.js"></script>
-
+    <!-- Sweet Alert Js  -->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/sweet-alert/sweetalert2.min.js"></script>
+    <!--script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/pages/jquery.sweet-alert.init.js"></script-->
     <!-- App js -->
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.core.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.app.js"></script>
@@ -259,8 +259,41 @@
         }
 
         function exitwaremore(devid){
-            window.location.href="<%$smarty.const.__APP__%>/manager/exitfieldview1?id="+devid;
+        		window.location.href="<%$smarty.const.__APP__%>/manager/exitfieldview1?id="+devid;
         }
+
+        function delwaremore(devid){
+        		swal({
+                title: '确定要删除该条记录吗?',
+                text: "该操作无法还原.",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#4fa7f3',
+                cancelButtonColor: '#d57171',
+                confirmButtonText: '确定,删除!',
+                cancelButtonText: '取消'
+            }).then(function () {
+            	window.location.href="<%$smarty.const.__APP__%>/manager/delanibyid?id="+devid;
+            });
+        }
+        
+!function ($) {
+    "use strict";
+
+    var SweetAlert = function () {
+    };
+
+    //examples
+
+        //init
+    $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+}(window.jQuery),
+
+//initializing
+    function ($) {
+        "use strict";
+        $.SweetAlert.init()
+    }(window.jQuery);
 
     </script>
 </html>

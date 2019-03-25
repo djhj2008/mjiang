@@ -369,7 +369,7 @@
      				var area_size=area[shedid];
      				var i=0;
      				for(i=0;i<area_size;i++){
-     					var value=i;
+     					var value=i+1;
      					var text=chArr[i];
      					$("#area").append("<option value='"+value+"'>"+text+"</option>");
      				}
@@ -394,10 +394,10 @@
      				document.getElementById("worker2").value=workername2;
      				//alert(values);
      				var chArr = new Array('A','B','C','D','E','F','G','H','I','J');
-     				var area_size=area[shedid];
+     				var area_size=area[values];
      				var i=0;
      				for(i=0;i<area_size;i++){
-     					var value = i;
+     					var value = i+1;
      					var text=chArr[i];
      					$("#area").append("<option value='"+value+"'>"+text+"</option>");
      				}
