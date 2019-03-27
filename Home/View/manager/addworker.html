@@ -74,8 +74,8 @@
                                 <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                 	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
-                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
-                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
+                                  <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
+                                  <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
                                 </ul>
                             </li>
 
@@ -85,6 +85,21 @@
                                     <li><a href="<%$smarty.const.__CONTROLLER__%>/chkworker">员工信息</a></li>
                                 </ul>
                             </li>
+
+
+                            <!--li>
+                                <a href="#"><i class="fi-share"></i> <span> 开发中 </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level nav" aria-expanded="false">
+                                    <li><a href="javascript: void(0);">开发中 1.1</a></li>
+                                    <li><a href="javascript: void(0);" aria-expanded="false">开发中 1.2 <span class="menu-arrow"></span></a>
+                                        <ul class="nav-third-level nav" aria-expanded="false">
+                                            <li><a href="javascript: void(0);">开发中 2.1</a></li>
+                                            <li><a href="javascript: void(0);">开发中 2.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li-->
+
                         </ul>
 
                     </div>
@@ -105,7 +120,6 @@
                             <div class="col-md-12">
                                 <div class="card-box">
                                     <h4 class="m-t-0 header-title">详细资料</h4>
-                                    <div class="row">
                                     <div class="col-md-6">
                                     <form action="<%$smarty.const.__CONTROLLER__%>/addworker" enctype="multipart/form-data" method="post">
                                         <div class="form-row">
@@ -131,8 +145,7 @@
 																								<button type="submit" class="btn btn-primary">提交</button>
 																						</div>
 																				</div>
-	                                    </form>
-                                    </div>
+	                                  </form>
                                 </div>
                             </div>                
                         </div>

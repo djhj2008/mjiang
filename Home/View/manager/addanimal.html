@@ -82,8 +82,8 @@
                                 <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                 	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
-                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
-                                    <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
+                                  <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
+                                  <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
                                 </ul>
                             </li>
 
@@ -381,6 +381,7 @@
 				function shedChange(values){
          		var name1 = new Array();
          		var name2 = new Array();
+         		var area = new Array();
          		var count=0;
          		<%foreach $field as $v%>
          			name1[count]="<%$v['workername1']%>";

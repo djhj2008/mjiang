@@ -774,7 +774,7 @@ class ManagerController extends HomeController
         $this->redirect('manager/chkshed', NULL, 0, '');
     }
     
-    public function search()
+    public function searchold()
     {
     		$name=$_SESSION['name'];
         $psnid=$_SESSION['psnid'];
@@ -967,6 +967,73 @@ class ManagerController extends HomeController
 
       $this->display();
 
-	}
+		}
+		
+		public function search(){
+    		$name=$_SESSION['name'];
+        $psnid=$_SESSION['psnid'];
+	      $name = array('A','B','C','D','E','F','G','H','I','J');
+	      
+        $sn=$_POST['sn'];
+        $devid=$_POST['devid'];
+				
+        $field = M('field')->where(array('psnid'=>$psnid))->order('shedid asc')->select();
+      	$this->assign('name', $name);
+      	$this->assign('field', $field);
+      	
+				if(empty($sn)&&empty($devid)){
+	        $shedid=$_POST['shedid'];
+	    		$area=$_POST['area'];
+	    		$fold=$_POST['fold'];
+	        
+	        if(empty($shedid)||empty($area)){
+	        	$this->display();
+	        	exit;
+	        }
+	        $where['state']=0;
+	        $where['psnid']=$psnid;
+	        $where['shedid']=$shedid;
+	        $where['area']=$area;
+	        
+	        if($fold){
+	        	$where['fold']=$fold;
+	        }
+	        
+	        $user = M('animal');
+	        $wares = $user->where($where)->order('id asc')->select();
+	        //var_dump($user->getLastSql());
+					for($i=0;$i<count($wares);$i++){
+						$index=$wares[$i]['area']-1;
+						$wares[$i]['areaname']=$name[$index];
+					}
+
+					$this->assign('name', $name);
+					$this->assign('field', $field);
+	        $this->assign('ani', $wares);
+	        $this->display();
+					exit;
+				}
+				
+        $where['state']=0;
+        $where['psnid']=$psnid;
+				if(!empty($sn)){
+					$where['sn'] = array('like','%'.$sn.'%');
+				}
+				if(!empty($devid)){
+					$where['devid'] = array('like','%'.$devid.'%');
+				}
+				if(!empty($where)){
+	        $user = M('animal');
+	        $ani = $user->where($where)->select();
+      	}
+				for($i=0;$i<count($ani);$i++){
+					$index=$ani[$i]['area']-1;
+					$ani[$i]['areaname']=$name[$index];
+				}
+        $this->assign('ani', $ani);
+        $this->display();
+                
+    }
+    
 }
 ?>
