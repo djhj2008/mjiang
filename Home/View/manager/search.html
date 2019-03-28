@@ -174,7 +174,6 @@
                                                     <td>设备ID</td>
                                                     <td>区域</td>
                                                     <td>栏号</td>
-                                                    <td>状态</td>
                                                     <th>操作</th>
                                                 </tr>
                                                 </thead>
@@ -198,13 +197,6 @@
                                                     	空
                                                     	<%else%>
                                                     	<%$v["fold"] %>
-                                                    	<%/if%>
-                                                    </td>
-                                                    <td>
-                                                    	<%if $v["state"] eq 0 %>
-                                                    	正常
-                                                    	<%else%>
-                                                    	离场
                                                     	<%/if%>
                                                     </td>
                                                     <!--td><img src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$v['pic_url']%>" alt="" height="60"></td-->

@@ -282,8 +282,8 @@ class ManagerController extends HomeController
         $typefind = M('anltype')->where(array('type'=>$type))->find();
 				$ware['type']=$typefind['name'];
 
-				$name = array('A','B','C','D','E','F','G','H','I','J');
-				$ware['area']=$name[$area-1];
+				$areas = array('A','B','C','D','E','F','G','H','I','J');
+				$ware['area']=$areas[$area-1];
 		
 				if(!empty($fold)){
 					$ware['fold']=$fold;
@@ -357,14 +357,14 @@ class ManagerController extends HomeController
     		$shedid=$_GET['shedid'];
     		$name=$_SESSION['name'];
         $psnid=$_SESSION['psnid'];
-        $name = array('A','B','C','D','E','F','G','H','I','J');
+        $areas = array('A','B','C','D','E','F','G','H','I','J');
         
         $user = M('animal');
         $wares = $user->where(array('psnid'=>$psnid,'shedid'=>$shedid,'state'=>0))->order('id asc')->select();
         //var_dump($user->getLastSql());
 				for($i=0;$i<count($wares);$i++){
 					$index=$wares[$i]['area']-1;
-					$wares[$i]['areaname']=$name[$index];
+					$wares[$i]['areaname']=$areas[$index];
 				}
 
 				$this->assign('name', $name);
@@ -972,7 +972,7 @@ class ManagerController extends HomeController
 		public function search(){
     		$name=$_SESSION['name'];
         $psnid=$_SESSION['psnid'];
-	      $name = array('A','B','C','D','E','F','G','H','I','J');
+	      $areas = array('A','B','C','D','E','F','G','H','I','J');
 	      
         $sn=$_POST['sn'];
         $devid=$_POST['devid'];
@@ -1004,11 +1004,9 @@ class ManagerController extends HomeController
 	        //var_dump($user->getLastSql());
 					for($i=0;$i<count($wares);$i++){
 						$index=$wares[$i]['area']-1;
-						$wares[$i]['areaname']=$name[$index];
+						$wares[$i]['areaname']=$areas[$index];
 					}
 
-					$this->assign('name', $name);
-					$this->assign('field', $field);
 	        $this->assign('ani', $wares);
 	        $this->display();
 					exit;
