@@ -7,10 +7,15 @@ class ManagerController extends HomeController
 
     public function index()
     {
-        $psnid=$_SESSION['psnid'];
-    		$name=$_SESSION['name'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
     		
-				$type = M('purptype')->select();
+    		if(empty($psnid)||empty($name)||empty($mj_tsntype)){
+    			$this->redirect('/login/index', NULL, 0, '');
+    		}	
+    		
+				$type = M('purptype')->where(array('anitype'=>$mj_tsntype))->select();
 
 				$field = M('field')->where(array('psnid'=>$psnid))->order('shedid asc')->select();
 				$fieldsize=count($field);
@@ -34,6 +39,7 @@ class ManagerController extends HomeController
 					$field[$i]['count']=$anicount;
 					//dump($field);
 				}
+				$this->assign('tsntype', $tsntype);
 				$this->assign('name', $name);
         $this->assign('field', $field);
         $this->display();
@@ -42,9 +48,10 @@ class ManagerController extends HomeController
 
     public function addshed()
     {
-    	
-        $psnid=$_SESSION['psnid'];
-    		$name=$_SESSION['name'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
+    		
 				$shed=$_POST['shed'];
 				$area=$_POST['area'];
 				$fold=$_POST['fold'];
@@ -52,30 +59,41 @@ class ManagerController extends HomeController
 				
 				$worker1=$_POST['worker1'];
 				$worker2=$_POST['worker2'];
-				
-				
-				if(!empty($shed)){
-						$filed=array(
-										'shedid'=>$shed,
-										'areas'=>$area,
-										'folds'=>$fold,
-										'type'=>$type,
-										'workerid1'=>$worker1,
-										'workerid2'=>$worker2,
-										'psnid'=>$psnid,
-						);
+
+				if($shed){
+					$filed['psnid']=$psnid;
+					$filed['shedid']=$shed;
+				}
+				if($area){
+					$filed['areas']=$area;
+				}
+				if($shed){
+					$filed['folds']=$fold;
+				}
+				if($shed){
+					$filed['type']=$type;
+				}
+				if($shed){
+					$filed['workerid1']=$worker1;
+				}
+				if($shed){
+					$filed['workerid2']=$worker2;
+				}
+
+				if(count($filed)==7){
 						$fieldfind = M('field')->where(array('psnid'=>$psnid,'shedid'=>$shed))->find();
 						if(empty($fieldfind)){
 							$savefield = M('field')->add($filed);
 						}else{
-							
+	            Alert("该舍已存在!","back",NULL);
+	            exit;
 						}
 
 						$this->redirect('manager/chkshed', NULL, 0, '');
 						exit;
 				}
-			
-				$type = M('purptype')->select();
+
+				$type = M('purptype')->where(array('anitype'=>$mj_tsntype))->select();
         $workers1 = M('worker')->where(array('psnid'=>$psnid,'type'=>1))->select();
 				$workers2 = M('worker')->where(array('psnid'=>$psnid,'type'=>2))->select();
         $this->assign('workers1', $workers1);
@@ -86,10 +104,74 @@ class ManagerController extends HomeController
         $this->display();
     }
 
+    public function addshedhome()
+    {
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
+    		
+				$shed=$_POST['shed'];
+				$area=$_POST['area'];
+				$fold=$_POST['fold'];
+				$type=$_POST['type'];
+				
+				$worker1=$_POST['worker1'];
+				$worker2=$_POST['worker2'];
+
+				if($shed){
+					$filed['psnid']=$psnid;
+					$filed['shedid']=$shed;
+				}
+				if($area){
+					$filed['areas']=$area;
+				}
+				if($shed){
+					$filed['folds']=$fold;
+				}
+				if($shed){
+					$filed['type']=$type;
+				}
+				if($shed){
+					$filed['workerid1']=$worker1;
+				}
+				if($shed){
+					$filed['workerid2']=$worker2;
+				}
+
+				if(count($filed)==7){
+						$fieldfind = M('field')->where(array('psnid'=>$psnid,'shedid'=>$shed))->find();
+						if(empty($fieldfind)){
+							$savefield = M('field')->add($filed);
+						}else{
+	            Alert("该舍已存在!","back",NULL);
+	            exit;
+						}
+
+						$this->redirect('manager/index', NULL, 0, '');
+						exit;
+				}
+			
+				$type = M('purptype')->where(array('anitype'=>$mj_tsntype))->select();
+        $workers1 = M('worker')->where(array('psnid'=>$psnid,'type'=>1))->select();
+				$workers2 = M('worker')->where(array('psnid'=>$psnid,'type'=>2))->select();
+				if(empty($workers1)||empty($workers2)){
+            Alert("请先添加员工信息!",NULL,"/manager/addworker");
+            exit;
+				}
+				
+        $this->assign('workers1', $workers1);
+        $this->assign('workers2', $workers2);
+				$this->assign('name', $name);
+				$this->assign('type', $type);
+				
+        $this->display();
+    }
+    
     public function addworker()
     {
-        $psnid=$_SESSION['psnid'];
-    		$name=$_SESSION['name'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
     		
 				$workername=$_POST['name'];
 				$phone=$_POST['phone'];
@@ -114,13 +196,14 @@ class ManagerController extends HomeController
 
     public function addanimal()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
 
 
-        $type = M('anltype')->select();
-				$kind1 = M('anlkind')->where(array('subtype'=>1))->select();
-				$kind2 = M('anlkind')->where(array('subtype'=>2))->select();
+        $type = M('anltype')->where(array('type'=>$mj_tsntype))->select();
+				$kind1 = M('anlkind')->where(array('subtype'=>1,'type'=>$mj_tsntype))->select();
+				$kind2 = M('anlkind')->where(array('subtype'=>2,'type'=>$mj_tsntype))->select();
 				$entertype = M('entertype')->select();
 				$field = M('field')->where(array('psnid'=>$psnid))->select();
 				
@@ -160,8 +243,9 @@ class ManagerController extends HomeController
     public function upload()
     {
     	
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
 				
         $sn = $_POST['sn'];
         $id = $_POST['id'];
@@ -303,8 +387,10 @@ class ManagerController extends HomeController
 
     public function upload2()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
+    		
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize = 31457280;// 设置附件上传大小
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg', 'pdf');// 设置附件上传类型
@@ -329,8 +415,9 @@ class ManagerController extends HomeController
 
     public function chkworker()
     {
-        $psnid=$_SESSION['psnid'];
-    		$name=$_SESSION['name'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
 
         $user = M('worker');
         $worker = $user->where(array('psnid'=>$psnid))->order('id asc')->select();
@@ -354,9 +441,11 @@ class ManagerController extends HomeController
 
     public function chkwaremore()
     {
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
+    		
     		$shedid=$_GET['shedid'];
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
         $areas = array('A','B','C','D','E','F','G','H','I','J');
         
         $user = M('animal');
@@ -375,8 +464,9 @@ class ManagerController extends HomeController
 
     public function chkwareview()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         $id=$_GET['id'];
         
         if(empty($id)){
@@ -398,7 +488,7 @@ class ManagerController extends HomeController
         }
 				$this->assign('ani', $ani);
 
-        $type = M('anltype')->order('id asc')->select();
+        $type = M('anltype')->where(array('type'=>$mj_tsntype))->order('id asc')->select();
         $typesize=count($type);
 				for($i=0;$i< $typesize;$i++){					
 					if($type[$i]['id']==$ani['type']){
@@ -406,7 +496,7 @@ class ManagerController extends HomeController
 					}
 				}
 				
-				$kind1 = M('anlkind')->where(array('subtype'=>1))->select();
+				$kind1 = M('anlkind')->where(array('subtype'=>1,'type'=>$mj_tsntype))->select();
         $kind1size=count($kind1);
         $this->assign('kind1index', 0);
 				for($i=0;$i< $kind1size;$i++){					
@@ -415,7 +505,7 @@ class ManagerController extends HomeController
 					}
 				}
 				
-				$kind2 = M('anlkind')->where(array('subtype'=>2))->select();
+				$kind2 = M('anlkind')->where(array('subtype'=>2,'type'=>$mj_tsntype))->select();
         $kind2size=count($kind2);
         $this->assign('kind2index', 0);
 				for($i=0;$i< $kind2size;$i++){					
@@ -473,8 +563,9 @@ class ManagerController extends HomeController
     
     public function delanibyid()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         $id=$_GET['id'];
         
         if(empty($id)){
@@ -491,8 +582,9 @@ class ManagerController extends HomeController
     
     public function chkwareedit()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         
         $sn = $_POST['sn'];
         $devid = $_POST['devid'];
@@ -609,8 +701,9 @@ class ManagerController extends HomeController
 
     public function chkworkeredit()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         $id=$_GET['id'];
 
 				$workername=$_POST['name'];
@@ -649,8 +742,9 @@ class ManagerController extends HomeController
     
     public function delworker()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         $id=$_GET['id'];
 
 
@@ -662,10 +756,11 @@ class ManagerController extends HomeController
     
     public function chkshed()
     {
-        $psnid=$_SESSION['psnid'];
-    		$name=$_SESSION['name'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
 
-				$type = M('purptype')->select();
+				$type = M('purptype')->where(array('anitype'=>$mj_tsntype))->select();
 				$field = M('field')->where(array('psnid'=>$psnid))->order('shedid asc')->select();
 				$fieldsize=count($field);
 				for($i=0;$i< $fieldsize;$i++){
@@ -695,8 +790,9 @@ class ManagerController extends HomeController
     
     public function chkshededit()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         $id=$_GET['id'];
 
 				$shedid=$_POST['shed'];
@@ -709,7 +805,7 @@ class ManagerController extends HomeController
         $user = M('field');
         $field = $user->where(array('id'=>$id))->find();
         //var_dump($user->getLastSql());
-        $type = M('purptype')->select();
+        $type = M('purptype')->where(array('anitype'=>$mj_tsntype))->select();
         if(empty($shedid)){
 
 	        $workers1 = M('worker')->where(array('psnid'=>$psnid,'type'=>1))->order('id asc')->select();
@@ -764,8 +860,9 @@ class ManagerController extends HomeController
     
     public function delshed()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         $id=$_GET['id'];
 
         $user = M('field');
@@ -776,8 +873,9 @@ class ManagerController extends HomeController
     
     public function searchold()
     {
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         //$id=$_POST['search'];
         $sn=$_GET['sn'];
         $this->assign('sn', $sn);
@@ -803,8 +901,9 @@ class ManagerController extends HomeController
     
     public function exitfieldview1()
     {
-    	  $name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         
         $id=$_GET['id'];
         $user = M('animal');
@@ -854,8 +953,9 @@ class ManagerController extends HomeController
     
     public function chkexitview1()
     {
-    	  $name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
     		$ani = M('exitmanager')->where(array('psnid'=>$psnid))->order('id asc')->select();
     		
     		$anicount=count($ani);
@@ -876,8 +976,9 @@ class ManagerController extends HomeController
     
     public function repairexitview1()
     {
-    	  $name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
         
         $sn=$_GET['sn'];
         
@@ -888,9 +989,11 @@ class ManagerController extends HomeController
     }
     
     public function todayValue(){
-				$name=$_SESSION['name'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
+    		
         $devid = $_GET["devid"];
-        $psnid=$_SESSION['psnid'];
         $now = time();
         $postArr = array();
         $postArr['devid'] = $devid;
@@ -970,8 +1073,10 @@ class ManagerController extends HomeController
 		}
 		
 		public function search(){
-    		$name=$_SESSION['name'];
-        $psnid=$_SESSION['psnid'];
+        $psnid=$_SESSION['mj_psnid'];
+    		$name=$_SESSION['mj_name'];
+    		$mj_tsntype=$_SESSION['mj_tsntype'];
+    		
 	      $areas = array('A','B','C','D','E','F','G','H','I','J');
 	      
         $sn=$_POST['sn'];

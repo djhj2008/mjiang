@@ -46,7 +46,33 @@
                     </a>
                 </div>
                 <nav class="navbar-custom">
+                    <ul class="list-unstyled topbar-right-menu float-right mb-0">
 
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                               aria-haspopup="false" aria-expanded="false">
+                                <i class="fa fa-user-o mr-0"></i> <span class="ml-1"><i class="mdi mdi-chevron-down"></i> </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h6 class="text-overflow m-0">欢迎!</h6>
+                                </div>
+
+                                <!-- item-->
+                                <!--a href="<%$smarty.const.__APP__%>/manager/saleinfo?token=<%$token%>&sale_id=<%$id%>" class="dropdown-item notify-item">
+                                    <i class="fi-head"></i> <span>修改密码</span>
+                                </a-->
+
+                                <!-- item-->
+                                <a href="<%$smarty.const.__APP__%>/login" class="dropdown-item notify-item">
+                                    <i class="fi-power"></i> <span>退出登陆</span>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
                     <ul class="list-inline menu-left mb-0">
                         <li class="float-left">
                             <button class="button-menu-mobile open-left waves-light waves-effect">
@@ -80,8 +106,8 @@
                             <li>
                                 <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
-                                	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牛舍信息</a></li>
-                                  <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加牛只</a></li>
+                                	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牧舍信息</a></li>
+                                  <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加动物</a></li>
                                   <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
                                 </ul>
                             </li>

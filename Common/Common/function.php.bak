@@ -23,7 +23,7 @@ function http($url, $data='', $method='GET'){
 }
 
 function gettopdir($win){
-    return "/mjiang/index.php/".$win;
+    return "/likeplus/index.php/".$win;
 }
 
 function Alert($Str,$Typ,$TopWindow){

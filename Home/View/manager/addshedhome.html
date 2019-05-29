@@ -7,25 +7,20 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
         <!-- App favicon -->
         <link rel="shortcut icon" href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/images/favicon.ico">
+
         <!-- App css -->
+        <!--link href="<%$smarty.const.ABOOT_URL%>bootstrap.css" rel="stylesheet" type="text/css" /-->
         <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/icons.css" rel="stylesheet" type="text/css" />
         <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
-        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/style.css?version=1.01.02" rel="stylesheet" type="text/css" />
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/css/style.css" rel="stylesheet" type="text/css" />
         <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/modernizr.min.js"></script>
 
-        <js file='__PUBLIC__/Uploadify/jquery-1.9.1.min.js'/>
-        <js file='__PUBLIC__/Uploadify/jquery.uploadify.min.js'/>
-        <!-- Bootstrap fileupload css -->
-        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/bootstrap-fileupload/bootstrap-fileupload.css" rel="stylesheet" />
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="<%$smarty.const.ACSS_URL%>main.css?version=1.01.02" id="color-switcher-link">
-        <link rel="stylesheet" href="<%$smarty.const.ACSS_URL%>animations.css">
-        <link rel="stylesheet" href="<%$smarty.const.ACSS_URL%>fonts.css">
+        <link href="<%$smarty.const.ACSS_URL%>fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+        <link href="<%$smarty.const.PUBLIC_ROOT_URL%>themes/explorer-fa/theme.css" media="all" rel="stylesheet" type="text/css"/>
 
     </head>
     <body>
@@ -148,60 +143,78 @@
             <div class="content-page">
                 <!-- Start content -->
                 <div class="content">
-                    <h3>编号:<%$ware['sn']%></h3>
-                    <h3>性别:<%$ware['sex']%></h3>
-                    <h3>品种:<%$ware['kind']%></h3>
-                    <h3>类型:<%$ware['type']%></h3>
-                    <h3>舍号:<%$ware['shedid']%></h3>
-                    <h3>区域:<%$ware['area']%></h3>
-                    <h3>栏号:<%$ware['fold']%></h3>
-                    <h3>出生日期:<%$ware['birthday']%></h3>
-                    <h3>出生重量:<%$ware['birthweight']%>斤</h3>
-                    <h3>胎次:<%$ware['childnum']%></h3>
-                    <h3>父亲编号:<%$ware['fathersn']%></h3>
-                    <h3>母亲编号:<%$ware['mothersn']%></h3>
-                    <h3>入场类型:<%$ware['entertype']%></h3>
-                    <h3>入场日期:<%$ware['enterdate']%></h3>
-                    <h3>入场来源:<%$ware['entersource']%></h3>
-                    <h3>入场体重:<%$ware['leaveweight']%>斤</h3>
-                    <h3>备注:<%$ware['info']%></h3>
-                    <h3>照片:</h3>
-                    <%foreach $filename as $file%>
-                    <img src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$file%>" alt="" height="300">
-                    <%/foreach%>
-                    <div >
-                        <div class="clo-2 mt-2">
-                            <button type="button" class="btn btn-prime" onclick="addware()">
-                                继续添加
-                            </button>
+                        <!-- Form row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-box">
+                                    <h4 class="m-t-0 header-title">详细资料 </h4>
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                    <form action="<%$smarty.const.__CONTROLLER__%>/addshedhome" method="post">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <label for="inputCity" class="col-form-label">舍号 </label>
+                                                <input required type="number" class="form-control" id="shed" name="shed">
+                                            </div>
+                                          <div class="form-group col-md-3">
+                                                <label for="type" class="col-form-label">类型</label>
+						                                    <select name="type" id="type" class="form-control" data-style="btn-light">
+						                                        <%foreach $type as $v%>
+						                                            <option value ="<%$v['type']%>"><%$v['name']%> </option>
+						                                        <%/foreach%>
+						                                    </select>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label for="inputZip" class="col-form-label">区域(每个舍区域个数,1-10区) </label>
+                                                <input required type="number" class="form-control" id="area" name="area" oninput="if(value>10)value=10">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label for="inputZip" class="col-form-label">栏位数量(每个区栏位个数) </label>
+                                                <input required type="number" class="form-control" id="fold" name="fold" oninput="if(value>100)value=100">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="kind" class="col-form-label">饲养员</label>
+						                                    <select name="worker1" id="worker1" class="form-control" data-style="btn-light">
+						                                        <%foreach $workers1 as $v%>
+						                                            <option value ="<%$v['id']%>"><%$v['name']%> </option>
+						                                        <%/foreach%>
+						                                    </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="type" class="col-form-label">兽医</label></label>
+						                                    <select name="worker2" id="worker2" class="form-control" data-style="btn-light">
+						                                        <%foreach $workers2 as $v%>
+						                                            <option value ="<%$v['id']%>"><%$v['name']%></option>
+						                                        <%/foreach%>
+						                                    </select>
+                                            </div>
+                                       	</div>
+																				<div class="form-row">
+																						<div class="col-md-6">
+																								<button type="submit" class="btn btn-primary">提交</button>
+																						</div>
+																				</div>
+	                                    </form>
+                                    </div>
+                                </div>
+                            </div>                
                         </div>
-                        <div class="clo-2 mt-3">
-                            <button type="button" class="btn btn-prime" onclick="checkware()">
-                                返回首页
-                            </button>
-                        </div>
-                    </div>
-            </div>
+                        <!-- end row -->
+                </div>
             </div>
             <!-- ============================================================== -->
             <!-- End Right content here -->
             <!-- ============================================================== -->
         </div>
-        <!-- END wrapper -->
-    </body>
         <footer class="footer text-right">
             2019 - 2020 © 牧江科技. - MJiang.com
         </footer>
+        <!-- END wrapper -->
+    </body>
 
-<script type="text/javascript">
-    function addware(){
-    window.location.href="<%$smarty.const.__CONTROLLER__%>/addanimal";
-    }
 
-    function checkware(){
-    window.location.href="<%$smarty.const.__CONTROLLER__%>/index";
-    }
-</script>
     <!-- jQuery  -->
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.min.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/popper.min.js"></script>
@@ -209,22 +222,11 @@
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/metisMenu.min.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/waves.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.slimscroll.js"></script>
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/counterup/jquery.counterup.min.js"></script>
 
-    <!-- Bootstrap fileupload js -->
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/bootstrap-fileupload/bootstrap-fileupload.js"></script>
-
-    <!-- Chart JS -->
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/chart.js/chart.bundle.js"></script>
-
-    <!-- init dashboard -->
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/pages/jquery.dashboard.init.js"></script>
+    <!-- Init js -->
+    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/pages/jquery.form-pickers.init.js"></script>
 
     <!-- App js -->
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.core.js"></script>
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.app.js"></script>
-
-    <script src="<%$smarty.const.AJS_URL%>compressed.js"></script>
-    <script src="<%$smarty.const.AJS_URL%>main.js"></script>
 </html>

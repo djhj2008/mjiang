@@ -26,10 +26,14 @@ class LoginController extends HomeController {
       if($userFind) {
           $token = md5($ip.$userFind['id']);
           $userid = $userFind['id'];
-          session('name',$userFind['info']);
+          session('mj_name',$userFind['info']);
           $psnfind=M('psn')->where(array('userid'=>$userid))->find();
           $psnid= $psnfind['id'];
-          session('psnid',$psnid);
+          $tsn=$psnfind['tsn'];
+          $tsntype=substr($tsn,0,1);
+          //dump($tsntype);
+          session('mj_tsntype',$tsntype);
+          session('mj_psnid',$psnid);
          	$this->redirect('manager/index', NULL, 0, '');
           
 			}else{
@@ -41,7 +45,13 @@ class LoginController extends HomeController {
 
 		}
 	
-	
+		public function logout(){
+				session('mj_tsntype',	NULL);
+				session('mj_psnid',	NULL);
+      	$this ->redirect('/login',array(),0,'');
+      	exit;
+		}
+		
 		public function register(){
 			$this->display();
 		}
