@@ -96,6 +96,10 @@ class ManagerController extends HomeController
 				$type = M('purptype')->where(array('anitype'=>$mj_tsntype))->select();
         $workers1 = M('worker')->where(array('psnid'=>$psnid,'type'=>1))->select();
 				$workers2 = M('worker')->where(array('psnid'=>$psnid,'type'=>2))->select();
+				if(empty($workers1)||empty($workers2)){
+            Alert("请先添加员工信息!",NULL,"/manager/addworker");
+            exit;
+				}
         $this->assign('workers1', $workers1);
         $this->assign('workers2', $workers2);
 				$this->assign('name', $name);
@@ -251,8 +255,15 @@ class ManagerController extends HomeController
         $id = $_POST['id'];
 
         $sex = $_POST['sex'];
+        
         $type = $_POST['type'];
-        if($type==1){
+        
+        $typefind = M('anltype')->where(array('id'=>$type))->find();
+        if($typefind){
+        	$sub_type=$typefind['sub_type'];
+        }
+				
+        if($sub_type==1){
         	$kind = $_POST['kind1'];
       	}else{
       		$kind = $_POST['kind2'];
@@ -472,12 +483,11 @@ class ManagerController extends HomeController
         if(empty($id)){
         	$sn=$_GET['sn'];
 	        $user = M('animal');
-	        $ani = $user->where(array('sn'=>$sn))->find();
+	        $ani = $user->where(array('sn'=>$sn,'psnid'=>$psnid))->find();
         }else{
 	        $user = M('animal');
 	        $ani = $user->where(array('id'=>$id))->find();
         }
-        //var_dump($user->getLastSql());
 
         $shedid=$ani['shedid'];
         if($ani['devid']==0){
@@ -680,10 +690,10 @@ class ManagerController extends HomeController
 				if(!empty($indate)&&$indate!=$ani['enterdate']){
 					$anisave['enterdate']=$indate;
 				}
-				if(!empty($oweight)&&$oweight!=$ani['leaveweight	']){
-					$anisave['leaveweight	']=$oweight;
+				if(!empty($oweight)&&$oweight!=$ani['leaveweight']){
+					$anisave['leaveweight']=$oweight;
 				}
-				
+
 				if(!empty($pic_url)&&$pic_url!=$ani['photo']){
 					$anisave['photo']=$pic_url;
 				}
@@ -922,7 +932,12 @@ class ManagerController extends HomeController
         if(empty($sn)){
 		        $type = M('exittype')->order('id asc')->select();
 		        $workers1 = M('worker')->where(array('psnid'=>$psnid,'type'=>3))->order('id asc')->select();
-		    	
+		    		
+						if(empty($workers1)){
+		            Alert("请先添加牧场管理员!",NULL,"/manager/addworker");
+		            exit;
+						}
+		    		
 		    		$this->assign('name', $name);
 		    		$this->assign('worker', $workers1);
 		        $this->assign('ani', $ani);
@@ -983,7 +998,7 @@ class ManagerController extends HomeController
         $sn=$_GET['sn'];
         
     		$ret = M('exitmanager')->where(array('psnid'=>$psnid,'sn'=>$sn))->delete();
-      	$anisave = M('animal')->where(array('sn'=>$sn))->save(array('state'=>0));
+      	$anisave = M('animal')->where(array('sn'=>$sn,'psnid'=>$psnid))->save(array('state'=>0));
     		
     		$this->redirect('manager/chkexitview1', NULL, 0, '');
     }

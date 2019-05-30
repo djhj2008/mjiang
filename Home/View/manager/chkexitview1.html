@@ -184,11 +184,11 @@
                                                    	<td><%$v["info"]%></td>
                                                     <!--td><img src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$v['pic_url']%>" alt="" height="60"></td-->
                                                     <td>
-                                                        <button type="button" id="changeup" onclick="chkwaremore(<%$v['sn']%>)"
+                                                        <button type="button" id="changeup" onclick="javascrtpt:chkexitwaremore('<%$v["sn"]%>')"
                                                                 class="btn btn-primary mt-2">
                                                             <span>查看</span> </button>
                                                         <%if $v["state"] eq 0 %>    	
-                                                        <button type="button" id="changeup" onclick="exitwaremore(<%$v['sn']%>)"
+                                                        <button type="button" id="changeup" onclick="javascrtpt:exitwaremore('<%$v["sn"]%>')"
                                                                 class="btn btn-primary mt-2">
                                                             <span>恢复</span> </button>
                                                         <%/if%> 
@@ -279,7 +279,7 @@
                 .appendTo('#datatable-buttons_wrapper .col-md-6:eq(0)');
         } );
 
-        function chkwaremore(ware_id){
+        function chkexitwaremore(ware_id){
             window.location.href="<%$smarty.const.__APP__%>/manager/chkwareview?sn="+ware_id;
         }
 
