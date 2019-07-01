@@ -381,19 +381,27 @@
          			area[count]="<%$v['areas']%>";
          			count++;
          		<%/foreach%>
-         		var shedid= document.getElementById("shedid").selectedIndex;
+
+						
+         		var shedid= <%$shed_index%>;//document.getElementById("shedid").selectedIndex;
          		//alert(shedid);
-         		if(shedid >= 0){
-	     				var workername1=name1[shedid];
-	     				var workername2=name2[shedid];
-	     				document.getElementById("worker1").value=workername1;
-	     				document.getElementById("worker2").value=workername2;
-     				}
-     				
-     				
+         		if(shedid < 0){
+         			shedid = 0;
+         		}else{
+         			//document.getElementById("shedid").disabled ="disabled";
+         			document.getElementById("shedid").style="background-color: #EEEEEE;";
+         		}
+						document.getElementById("shedid").selectedIndex=shedid;
+						
+     				var workername1=name1[shedid];
+     				var workername2=name2[shedid];
+     				document.getElementById("worker1").value=workername1;
+     				document.getElementById("worker2").value=workername2;
+
 						var chArr = new Array('A','B','C','D','E','F','G','H','I','J');
      				var area_size=area[shedid];
      				var i=0;
+     				$("#area").empty();
      				for(i=0;i<area_size;i++){
      					var value=i+1;
      					var text=chArr[i];
@@ -423,6 +431,7 @@
      				var chArr = new Array('A','B','C','D','E','F','G','H','I','J');
      				var area_size=area[values];
      				var i=0;
+     				$("#area").empty();
      				for(i=0;i<area_size;i++){
      					var value = i+1;
      					var text=chArr[i];

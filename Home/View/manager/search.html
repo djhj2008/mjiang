@@ -336,11 +336,12 @@
 						var chArr = new Array('A','B','C','D','E','F','G','H','I','J');
      				var area_size=area[shedid];
      				var i=0;
+     				$("#area").empty();
      				for(i=0;i<area_size;i++){
      					var value=i+1;
      					var text=chArr[i];
      					$("#area").append("<option value='"+value+"'>"+text+"</option>");
-     				} 
+     				}
         } );
 
         function chkwaremore(ware_id){
@@ -377,6 +378,7 @@
      				var chArr = new Array('A','B','C','D','E','F','G','H','I','J');
      				var area_size=area[values];
      				var i=0;
+     				$("#area").empty();
      				for(i=0;i<area_size;i++){
      					var value = i+1;
      					var text=chArr[i];

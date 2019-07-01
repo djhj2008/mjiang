@@ -203,15 +203,18 @@ class ManagerController extends HomeController
         $psnid=$_SESSION['mj_psnid'];
     		$name=$_SESSION['mj_name'];
     		$mj_tsntype=$_SESSION['mj_tsntype'];
-
+    		
+				$field_id =$_GET['id'];
 
         $type = M('anltype')->where(array('type'=>$mj_tsntype))->select();
 				$kind1 = M('anlkind')->where(array('subtype'=>1,'type'=>$mj_tsntype))->select();
 				$kind2 = M('anlkind')->where(array('subtype'=>2,'type'=>$mj_tsntype))->select();
 				$entertype = M('entertype')->select();
 				$field = M('field')->where(array('psnid'=>$psnid))->select();
-				
+
 				$fieldsize=count($field);
+				
+				$shed_index=-1;
 				for($i=0;$i< $fieldsize;$i++){
 					$workerid1=$field[$i]['workerid1'];
 					$workerid2=$field[$i]['workerid2'];
@@ -223,14 +226,17 @@ class ManagerController extends HomeController
 					
 					$field[$i]['workername1']=$worker1['name'];
 					$field[$i]['workername2']=$worker2['name'];
-					$field[$i]['workername3']=$worker3['name'];
-					//var_dump($field);
-					//exit;
-					
+					$field[$i]['workername3']=$worker3['name'];	
+					if($field_id){
+						if($field[$i]['id']==$field_id){
+							$shed_index=$i;
+						}
+					}
 				}
-				
+				$this->assign('shed_index', $shed_index);
 				$this->assign('field', $field);
 				
+
         if(empty($type)){
 
         }else{
@@ -876,9 +882,17 @@ class ManagerController extends HomeController
         $id=$_GET['id'];
 
         $user = M('field');
-        $worker = $user->where(array('id'=>$id))->delete();
-
-        $this->redirect('manager/chkshed', NULL, 0, '');
+        $field = $user->where(array('id'=>$id))->find();
+        $shedid=$field['shedid'];
+        
+        $anicount = M('animal')->where(array('psnid'=>$psnid,'shedid'=>$shedid,'state'=>0))->count();
+        
+        if($anicount==0){
+        	$worker = $user->where(array('id'=>$id))->delete();
+        	$this->redirect('manager/chkshed', NULL, 0, '');
+        }else{
+        	Alert("该舍内存在动物,无法删除.","back",NULL);
+        }
     }
     
     public function searchold()

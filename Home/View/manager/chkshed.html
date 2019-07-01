@@ -189,6 +189,9 @@
                                                         <button type="button" id="changeup" onclick="delwaremore(<%$v['id']%>)"
                                                                 class="btn btn-primary mt-2">
                                                             <span>删除</span> </button>
+                                                        <button type="button" id="changeup" onclick="addwaremore(<%$v['id']%>)"
+                                                                class="btn btn-primary mt-2">
+                                                            <span>添加动物</span> </button>
                                                     </td>
                                                 </tr>
                                                 <%/foreach%>
@@ -283,7 +286,11 @@
         function delwaremore(ware_id){
             window.location.href="<%$smarty.const.__APP__%>/manager/delshed?id="+ware_id;
         }
-
+        
+        function addwaremore(ware_id){
+            window.location.href="<%$smarty.const.__APP__%>/manager/addanimal?id="+ware_id;
+        }
+        
         function shedadd(){
             window.location.href="<%$smarty.const.__APP__%>/manager/addshed";
         }
