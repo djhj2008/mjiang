@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/images/favicon.ico">
+    <link rel="shortcut icon" href="<%$smarty.const.PUBLIC_ROOT_URL%>assets/images/favicon.ico" />
 
     <!-- DataTables -->
     <link href="<%$smarty.const.PUBLIC_ROOT_URL%>plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
@@ -23,9 +23,9 @@
 
     <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/modernizr.min.js"></script>
         
-    <link rel="stylesheet" href="<%$smarty.const.WEUI_URL%>/weui.min.css">
-    <link rel="stylesheet" href="<%$smarty.const.WEUI_URL%>/jquery-weui.css">
-    <link rel="stylesheet" href="<%$smarty.const.WEUI_URL%>/demos.css?v=01.01.01">
+    <link rel="stylesheet" href="<%$smarty.const.WEUI_URL%>/weui.min.css" />
+    <link rel="stylesheet" href="<%$smarty.const.WEUI_URL%>/jquery-weui.css" />
+    <link rel="stylesheet" href="<%$smarty.const.WEUI_URL%>/demos.css?v=01.01.01" />
     <title>牧江科技</title>
 </head>
 <body style="height: 100%; margin: 0">
@@ -106,7 +106,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                 	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牧舍信息</a></li>
-                                  <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加动物</a></li>
                                   <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
                                 </ul>
                             </li>
@@ -160,30 +159,30 @@
 		</div>
 </div>
 
-    <!-- jQuery  -->
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.min.js"></script>
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/popper.min.js"></script>
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/bootstrap.min.js"></script>
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/metisMenu.min.js"></script>
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/waves.js"></script>
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.slimscroll.js"></script>
+<!-- jQuery  -->
+<script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.min.js"></script>
+<script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/popper.min.js"></script>
+<script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/bootstrap.min.js"></script>
+<script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/metisMenu.min.js"></script>
+<script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/waves.js"></script>
+<script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.slimscroll.js"></script>
 
-    <!-- App js -->
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.core.js"></script>
-    <script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.app.js"></script>
+<!-- App js -->
+<script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.core.js"></script>
+<script src="<%$smarty.const.PUBLIC_ROOT_URL%>assets/js/jquery.app.js"></script>
     
-<script src="<%$smarty.const.AJS_URL%>echarts.min.js?v=01.01.02"></script>
+<script src="<%$smarty.const.AJS_URL%>echarts.min.js?v=01.01.01"></script>
 <script src="<%$smarty.const.AJS_URL%>macarons.js?"></script>
 <script src="<%$smarty.const.AJS_URL%>jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'),'macarons');
     $(document).ready(function() {
-        var C1=window.location.href.split("?")[1];
-        var time=C1.split("=")[2];
-       // console.log(time);
-        var uptime=  time.substring(5,10);
-        document.getElementById("title").innerHTML=uptime;
+       //var C1=window.location.href.split("?")[1];
+       //var time=C1.split("=")[2];
+       //console.log(time);
+       //var uptime=  time.substring(5,10);
+       //document.getElementById("title").innerHTML=uptime;
 
        var date = JSON.parse('<%$dateArr%>');
        var temp1 = JSON.parse('<%$temp1Arr%>');
@@ -198,7 +197,7 @@
            min = min2;
        }
 
-      //  console.log(date,temp1,temp2);
+      	//console.log(date,temp1,temp2);
         var option = {
             tooltip: {
                 trigger: 'axis',

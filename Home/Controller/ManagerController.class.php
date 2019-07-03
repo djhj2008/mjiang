@@ -19,6 +19,8 @@ class ManagerController extends HomeController
 
 				$field = M('field')->where(array('psnid'=>$psnid))->order('shedid asc')->select();
 				$fieldsize=count($field);
+				
+				$count_all = 0;
 				for($i=0;$i< $fieldsize;$i++){
 					$workerid1=$field[$i]['workerid1'];
 					$workerid2=$field[$i]['workerid2'];
@@ -37,8 +39,10 @@ class ManagerController extends HomeController
 					$shedid = $field[$i]['shedid'];
 					$anicount = M('animal')->where(array('psnid'=>$psnid,'shedid'=>$shedid,'state'=>0))->count();
 					$field[$i]['count']=$anicount;
+					$count_all = $count_all+$anicount;
 					//dump($field);
 				}
+				$this->assign('count_all', $count_all);
 				$this->assign('tsntype', $tsntype);
 				$this->assign('name', $name);
         $this->assign('field', $field);
@@ -295,6 +299,7 @@ class ManagerController extends HomeController
 				$info = $_POST['info'];
         $finfo = str_replace("\r\n", "<br>", $info);
         
+        /*
         $ret = D('animal')->where(array('sn' => $sn))->find();
         if (!empty($ret)) {
             echo "<script language=\"JavaScript\">\r\n";
@@ -302,7 +307,7 @@ class ManagerController extends HomeController
             echo " history.back();\r\n";
             echo "</script>";
             exit;
-        }
+        }*/
 
 				$ani=array();
 				$ani['psnid']=$psnid;
@@ -1022,7 +1027,12 @@ class ManagerController extends HomeController
     		$name=$_SESSION['mj_name'];
     		$mj_tsntype=$_SESSION['mj_tsntype'];
     		
-        $devid = $_GET["devid"];
+        $devid = $_GET['devid'];
+				if(empty($devid)){
+					$sn = $_GET['sn'];
+					$fold = $_GET['fold'];
+				}
+
         $now = time();
         $postArr = array();
         $postArr['devid'] = $devid;
@@ -1051,18 +1061,31 @@ class ManagerController extends HomeController
 				//dump($btemp);
 				//dump($temp_value);
         
-				$dev=M('device')->where(array('devid'=>$devid,'psn'=>$psnid))->find();
+        if($devid){
+        	$dev=M('device')->where(array('devid'=>$devid,'psn'=>$psnid))->find();
+        }else if($sn){
+        	$dev=M('device')->where(array('sn'=>$sn,'psn'=>$psnid))->find();
+        	if($dev){
+        		$devid = $dev['devid'];
+        	}else{
+        		$dev=M('device')->where(array('fold'=>$fold,'psn'=>$psnid))->find();
+        		$devid = $dev['devid'];
+        	}
+        }
+				
 				if($dev==NULL){
 					//echo "<script type='text/javascript'>alert('设备不存在.');distory.back();</script>";
 					$this->display();
 					exit;
 				}
+
         $avg=(float)$dev['avg_temp'];
         $postArr['time']=array('between',array($start,$end));
-        if($selectSql=M('access')->where('devid ='.$devid.' and psn= '.$psnid.' and time >= '.$start_time.' and time <= '.$end_time)
+				$selectSql=M('access')->where('devid ='.$devid.' and psn= '.$psnid.' and time >= '.$start_time.' and time <= '.$end_time)
 													        ->group('time')
 													        ->order('id desc')
-													        ->select())
+													        ->select();
+        if($selectSql)
         {
            $todayData = array_slice($selectSql,0,24);
            $dataCount= count($todayData);

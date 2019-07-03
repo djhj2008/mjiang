@@ -107,7 +107,6 @@
                                 <a href="javascript: void(0);"><i class="fa fa-paw"></i> <span> 牧场管理 </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                 	<li><a href="<%$smarty.const.__CONTROLLER__%>/chkshed">牧舍信息</a></li>
-                                  <li><a href="<%$smarty.const.__CONTROLLER__%>/addanimal">添加动物</a></li>
                                   <li><a href="<%$smarty.const.__CONTROLLER__%>/chkexitview1">离场信息</a></li>
                                 </ul>
                             </li>
@@ -160,26 +159,31 @@
                                                 <thead>
                                                 <tr>
                                                     <td>编号</td>
-                                                    <td>设备ID(温度查询)</td>
+                                                    <td>(温度查询)</td>
                                                     <td>区域</td>
+                                                    <td>栏</td>
                                                     <th>操作</th>
                                                 </tr>
                                                 </thead>
-
                                                 <tbody>
                                                 <%foreach $wares as $v%>
                                                 <tr>
                                                     <td><%$v["sn"]%></td>
                                                     <td>
+                                                    	<%if $v["psnid"] eq 12 %>
+                                                    	<a href="<%$smarty.const.__CONTROLLER__%>/todayValue?sn=<%$v["sn"]%>&fold=<%$v["fold"]%>>">体温</a>
+                                                    	<%else%>
                                                     	<%if $v["devid"] gt 0 %>
                                                     	<a href="<%$smarty.const.__CONTROLLER__%>/todayValue?devid=<%$v["devid"]%>&psnid=<%$v["psnid"]%>"><%$v["devid"]%></a>
                                                     	<%else%>
                                                     	空
                                                     	<%/if%>
+                                                    	<%/if%>
                                                     </td>
                                                     <td>
                                                     	<%$v["areaname"]%>
                                                     </td>
+                                                    <td><%$v["fold"]%></td>
                                                     <!--td><img src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$v['pic_url']%>" alt="" height="60"></td-->
                                                     <td>
                                                         <button type="button" id="changeup" onclick="chkwaremore(<%$v['id']%>)"
