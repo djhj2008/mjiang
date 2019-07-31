@@ -66,7 +66,7 @@
                                 </a-->
 
                                 <!-- item-->
-                                <a href="<%$smarty.const.__APP__%>/login" class="dropdown-item notify-item">
+                                <a href="<%$smarty.const.__APP__%>/login/logout" class="dropdown-item notify-item">
                                     <i class="fi-power"></i> <span>退出登陆</span>
                                 </a>
 
@@ -235,14 +235,14 @@
 	                                            	<label for="inputZip" class="col-form-label">出生日期</label>
 	                                           	 	<input class="form-control" type="date" id="bdate" name="bdate" value="<%$ani['birthday']%>">
                                             </div>
-                                            <div class="form-group col-md-4">
+                                            <!--div class="form-group col-md-4">
                                                 <label for="inputZip" class="col-form-label">出生重量(斤)</label>
                                                 <input type="text" class="form-control" id="bweight" name="bweight" value="<%$ani['birthweight']%>">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="childnum" class="col-form-label">胎次(次)</label>
                                                 <input type="text" class="form-control" id="childnum " name="childnum" value="<%$ani['childnum']%>">
-                                            </div>
+                                            </div-->
                                         </div>
                                         <div class="form-row">
                                        			<div class="form-group col-md-6">
@@ -254,7 +254,7 @@
                                                 <input type="text" class="form-control" id="mosn" name="mosn" value="<%$ani['mothersn']%>">
                                             </div>
                                         </div>
-                                        <div class="form-row">
+                                        <!--div class="form-row">
                                        			<div class="form-group col-md-6">
 	                                            	<label for="entertype" class="col-form-label">入场类型</label>
 						                                    <select name="entertype" id="entertype" class="form-control" data-style="btn-light">
@@ -278,9 +278,18 @@
                                                 <label for="inputZip" class="col-form-label">入场日期</label>
                                                 <input class="form-control" type="date" id="indate" name="indate" value="<%$ani['enterdate']%>">
                                             </div>
-                                        </div>
+                                        </div-->
+                                   		  <div class="form-row">
+				                                    <div class="form-group col-md-6">
+		                                   		 			<label for="info" class="col-form-label">备注</label>
+				                                        <textarea class="form-control" name="info" id="info" ><%$ani['info']%></textarea>
+				                                    </div>
+		                                    </div>
+		                                    <div class="col-md-6">
+		                                    	<button type="submit" onclick="" class="btn btn-primary">修改</button>
+		                                    </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <!--div class="col-md-6">
 		                                    <div class="form-row">
 		                                    <div class="form-group col-md-6">
 	                                   	 		<img class="" src="<%$smarty.const.PUBLIC_ROOT_URL%>uploads/<%$ani['photo']%>" alt="" height="300" id="photo">	
@@ -299,11 +308,11 @@
 		                                        <textarea class="form-control" name="info" id="info" ><%$ani['info']%></textarea>
 		                                    </div>
 		                                    </div>
-	                                  </div>
+	                                  </div-->
 	
-                                    <div class="col-md-6">
+                                    <!--div class="col-md-6">
                                     <button type="submit" onclick="" class="btn btn-primary">修改</button>
-                                    </div>
+                                    </div-->
                                     </div>
                                     </form>
                                 </div>
